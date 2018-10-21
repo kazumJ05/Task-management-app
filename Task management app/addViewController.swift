@@ -10,12 +10,17 @@ import UIKit
 
 class addViewController: UIViewController, UITextFieldDelegate {
     
-    var timercount: Double = 0
+    var timercount: Int = 0
+    var timerhour: Int = 0
+    var timerminute: Int = 0
+    var timersecond: Int = 0
     var studydataArray: [Dictionary<String, String>] = []
     var timer: Timer = Timer()
     let savedata = UserDefaults.standard
     
-    @IBOutlet var timelabel: UILabel!
+    @IBOutlet var timesecondlabel: UILabel!
+    @IBOutlet var timehourlabel: UILabel!
+    @IBOutlet var timeminutelabel: UILabel!
     @IBOutlet var subjecttextField: UITextField!
 
     override func viewDidLoad() {
@@ -24,7 +29,9 @@ class addViewController: UIViewController, UITextFieldDelegate {
             studydataArray = savedata.array(forKey: "STUDYDATA") as! [Dictionary<String, String>]
         }
         
-        timelabel.textAlignment = NSTextAlignment.right
+        timesecondlabel.textAlignment = NSTextAlignment.right
+        timehourlabel.textAlignment = NSTextAlignment.right
+        timeminutelabel.textAlignment = NSTextAlignment.right
         // Do any additional setup after loading the view.
     }
     
@@ -32,30 +39,49 @@ class addViewController: UIViewController, UITextFieldDelegate {
         if timer.isValid{
             timer.invalidate()
         }
-        let studyrireki = ["subject": subjecttextField.text!, "time": String(Int(timercount)), "date": String(gettoday())]
-        studydataArray.append(studyrireki)
-        savedata.set(studydataArray, forKey: "STUDYDATA")
-        let aleat = UIAlertController(title: "保存完了", message: "保存が完了しました", preferredStyle: .alert)
-        aleat.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        self.present(aleat, animated: true, completion: nil)
-        subjecttextField.text = ""
-        timercount = 0
-        timelabel.text = String(Int(timercount))
-        
-        
+        if subjecttextField.text == ""{
+            let aleat = UIAlertController(title: "エラー", message:"教科を入力してください", preferredStyle: .alert)
+            aleat.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(aleat, animated: true, completion: nil)
+            
+        }else{
+            let studyrireki = ["subject": subjecttextField.text!, "secondtime": String(timersecond), "minutetime": String(timerminute), "hourtime": String(timerhour), "date": String(gettoday())]
+            studydataArray.append(studyrireki)
+            savedata.set(studydataArray, forKey: "STUDYDATA")
+            let aleat = UIAlertController(title: "保存完了", message: "保存が完了しました", preferredStyle: .alert)
+            aleat.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(aleat, animated: true, completion: nil)
+            subjecttextField.text = ""
+            timercount = 0
+            timerhour = 0
+            timersecond = 0
+            timerminute = 0
+            timesecondlabel.text = String(Int(timersecond))
+            timeminutelabel.text = String(Int(timerminute))
+            timehourlabel.text = String(Int(timerhour))
+            
+        }
     }
     
     @IBAction func selectstartstop(){
-        if !timer.isValid{
-            timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(self.up),userInfo: nil, repeats: true)
-        }else if timer.isValid{
+        if !timer.isValid {
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.up),userInfo: nil, repeats: true)
+        } else if timer.isValid{
             timer.invalidate()
         }
     }
     
     @objc func up(){
-        timercount = timercount + 0.01
-        timelabel.text = String(format: "%.0f", timercount)
+        timercount = timercount + 1
+        timerhour = timercount / 3600
+        timerminute = timercount % 3600 / 60
+        timersecond =  timercount % 60
+        
+        
+        timehourlabel.text = String(timerhour)
+        timeminutelabel.text = String(timerminute)
+        timesecondlabel.text = String(timersecond)
+        
     }
     
     func gettoday(format: String = "MM/dd") -> String {

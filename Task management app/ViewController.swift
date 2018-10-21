@@ -56,7 +56,9 @@ class ViewController: UIViewController, UITableViewDataSource{
         
         cell.subjectlabel.text = nowIndexPathDictionary["subject"]
         cell.datelabel.text = nowIndexPathDictionary["date"]
-        cell.timelabel.text = nowIndexPathDictionary["time"]
+        cell.timecountlabel.text = nowIndexPathDictionary["secondtime"]
+        cell.timeminutelabel.text = nowIndexPathDictionary["minutetime"]
+        cell.timehourlabel.text = nowIndexPathDictionary["hourtime"]
         
         return cell
     }
