@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		015BD7C32144E31400900AEC /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BD7C12144E31400900AEC /* ListTableViewCell.swift */; };
+		015BD7C42144E31400900AEC /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015BD7C22144E31400900AEC /* ListTableViewCell.xib */; };
+		015BD7C62144E94D00900AEC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BD7C52144E94D00900AEC /* TabBarController.swift */; };
+		015BD7C82144E97100900AEC /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BD7C72144E97100900AEC /* addViewController.swift */; };
+		015BD7CA2144E9C100900AEC /* configrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BD7C92144E9C100900AEC /* configrationViewController.swift */; };
+		015BD7CC2144E9FA00900AEC /* GachaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BD7CB2144E9FA00900AEC /* GachaViewController.swift */; };
+		015BD7D42144EE0200900AEC /* ギアアイコン (2).png in Resources */ = {isa = PBXBuildFile; fileRef = 015BD7D32144EE0100900AEC /* ギアアイコン (2).png */; };
+		015BD7D62144EE5D00900AEC /* 家の無料アイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 015BD7D52144EE5D00900AEC /* 家の無料アイコン.png */; };
+		015BD7D82144F03100900AEC /* プラスのアイコン素材.png in Resources */ = {isa = PBXBuildFile; fileRef = 015BD7D72144F03100900AEC /* プラスのアイコン素材.png */; };
+		015BD7DA2144F03B00900AEC /* 宝くじのアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 015BD7D92144F03A00900AEC /* 宝くじのアイコン.png */; };
 		01DB32EF21044F9800EC13D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB32EE21044F9800EC13D2 /* AppDelegate.swift */; };
 		01DB32F121044F9800EC13D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB32F021044F9800EC13D2 /* ViewController.swift */; };
 		01DB32F421044F9800EC13D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DB32F221044F9800EC13D2 /* Main.storyboard */; };
@@ -34,6 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		015BD7C12144E31400900AEC /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		015BD7C22144E31400900AEC /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		015BD7C52144E94D00900AEC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		015BD7C72144E97100900AEC /* addViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
+		015BD7C92144E9C100900AEC /* configrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = configrationViewController.swift; sourceTree = "<group>"; };
+		015BD7CB2144E9FA00900AEC /* GachaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GachaViewController.swift; sourceTree = "<group>"; };
+		015BD7D32144EE0100900AEC /* ギアアイコン (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ギアアイコン (2).png"; sourceTree = "<group>"; };
+		015BD7D52144EE5D00900AEC /* 家の無料アイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "家の無料アイコン.png"; sourceTree = "<group>"; };
+		015BD7D72144F03100900AEC /* プラスのアイコン素材.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "プラスのアイコン素材.png"; sourceTree = "<group>"; };
+		015BD7D92144F03A00900AEC /* 宝くじのアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宝くじのアイコン.png"; sourceTree = "<group>"; };
 		01DB32EB21044F9800EC13D2 /* Task management app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task management app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DB32EE21044F9800EC13D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01DB32F021044F9800EC13D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,12 +117,22 @@
 		01DB32ED21044F9800EC13D2 /* Task management app */ = {
 			isa = PBXGroup;
 			children = (
+				015BD7D92144F03A00900AEC /* 宝くじのアイコン.png */,
+				015BD7D72144F03100900AEC /* プラスのアイコン素材.png */,
+				015BD7D52144EE5D00900AEC /* 家の無料アイコン.png */,
+				015BD7D32144EE0100900AEC /* ギアアイコン (2).png */,
 				01DB32EE21044F9800EC13D2 /* AppDelegate.swift */,
 				01DB32F021044F9800EC13D2 /* ViewController.swift */,
 				01DB32F221044F9800EC13D2 /* Main.storyboard */,
 				01DB32F521044FA100EC13D2 /* Assets.xcassets */,
 				01DB32F721044FA100EC13D2 /* LaunchScreen.storyboard */,
 				01DB32FA21044FA100EC13D2 /* Info.plist */,
+				015BD7C12144E31400900AEC /* ListTableViewCell.swift */,
+				015BD7C22144E31400900AEC /* ListTableViewCell.xib */,
+				015BD7C52144E94D00900AEC /* TabBarController.swift */,
+				015BD7C72144E97100900AEC /* addViewController.swift */,
+				015BD7C92144E9C100900AEC /* configrationViewController.swift */,
+				015BD7CB2144E9FA00900AEC /* GachaViewController.swift */,
 			);
 			path = "Task management app";
 			sourceTree = "<group>";
@@ -230,7 +260,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				01DB32F921044FA100EC13D2 /* LaunchScreen.storyboard in Resources */,
+				015BD7D42144EE0200900AEC /* ギアアイコン (2).png in Resources */,
+				015BD7D82144F03100900AEC /* プラスのアイコン素材.png in Resources */,
+				015BD7C42144E31400900AEC /* ListTableViewCell.xib in Resources */,
+				015BD7D62144EE5D00900AEC /* 家の無料アイコン.png in Resources */,
 				01DB32F621044FA100EC13D2 /* Assets.xcassets in Resources */,
+				015BD7DA2144F03B00900AEC /* 宝くじのアイコン.png in Resources */,
 				01DB32F421044F9800EC13D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +292,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				01DB32F121044F9800EC13D2 /* ViewController.swift in Sources */,
+				015BD7C62144E94D00900AEC /* TabBarController.swift in Sources */,
+				015BD7CA2144E9C100900AEC /* configrationViewController.swift in Sources */,
+				015BD7CC2144E9FA00900AEC /* GachaViewController.swift in Sources */,
 				01DB32EF21044F9800EC13D2 /* AppDelegate.swift in Sources */,
+				015BD7C82144E97100900AEC /* addViewController.swift in Sources */,
+				015BD7C32144E31400900AEC /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
