@@ -8,17 +8,30 @@
 
 import UIKit
 
-class configrationViewController: UIViewController {
+class configrationViewController: UIViewController, UITableViewDataSource{
+    
+    var characterDataArray: [Dictionary<String, String>] = []
+    
+    @IBOutlet var characterTable: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func selectcolorwhite(){
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     }
     
 

@@ -11,17 +11,22 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource{
     
     var studydataArray: [Dictionary<String, String>] = []
+    var characterDataArray: [Dictionary<String, String>] = []
     let savedata = UserDefaults.standard
     @IBOutlet var table: UITableView!
     @IBOutlet var lvlabel:UILabel!
     @IBOutlet var charaImageView: UIImageView!
     @IBOutlet var namelabel: UILabel!
+    @IBOutlet var oldPtLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
          table.register(UINib(nibName: "ListTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
         table.rowHeight = 90
+        oldPtLabel.textAlignment = NSTextAlignment.right
+        lvlabel.textAlignment = NSTextAlignment.right
+        namelabel.textAlignment = NSTextAlignment.right
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -59,6 +64,7 @@ class ViewController: UIViewController, UITableViewDataSource{
         cell.timecountlabel.text = nowIndexPathDictionary["secondtime"]
         cell.timeminutelabel.text = nowIndexPathDictionary["minutetime"]
         cell.timehourlabel.text = nowIndexPathDictionary["hourtime"]
+        oldPtLabel.text = nowIndexPathDictionary["pt"]
         
         return cell
     }
