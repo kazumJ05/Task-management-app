@@ -11,8 +11,12 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource{
     
     var studydataArray: [Dictionary<String, String>] = []
+    var colorDataArray: [Dictionary<String, Int>] = []
     var characterDataArray: [Dictionary<String, String>] = []
+    
+    let colorSaveData = UserDefaults.standard
     let savedata = UserDefaults.standard
+    
     @IBOutlet var table: UITableView!
     @IBOutlet var lvlabel:UILabel!
     @IBOutlet var charaImageView: UIImageView!
@@ -32,10 +36,14 @@ class ViewController: UIViewController, UITableViewDataSource{
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         print(studydataArray)
+        print(colorDataArray)
         if savedata.array(forKey: "STUDYDATA") != nil{
             studydataArray = savedata.array(forKey: "STUDYDATA") as! [Dictionary<String, String>]
         }
         table.reloadData()
+        if colorSaveData.array(forKey: "COLOR") != nil{
+            colorDataArray = colorSaveData.array(forKey: "COLOR") as! [Dictionary<String, Int>]
+        }
     }
     
 // override func viewWillAppear(_ animated: Bool) {

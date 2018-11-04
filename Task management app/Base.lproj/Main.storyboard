@@ -44,17 +44,8 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="deF-f6-N3n"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4l-B0-RD7">
-                                <rect key="frame" x="95" y="94" width="50" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.70748275940000005" green="0.99153116230000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="blue"/>
-                                <connections>
-                                    <action selector="selectcolorblue" destination="BYZ-38-t0r" eventType="touchUpInside" id="CtZ-NR-2Cs"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nl-v0-keX">
-                                <rect key="frame" x="169" y="94" width="50" height="30"/>
+                                <rect key="frame" x="241" y="37" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.70121154777239059" blue="0.94557706088313398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="pink"/>
@@ -63,7 +54,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOT-hM-UCo">
-                                <rect key="frame" x="241" y="94" width="50" height="30"/>
+                                <rect key="frame" x="309" y="37" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.79318906259999999" green="1" blue="0.52904352639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="green"/>
@@ -72,9 +63,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aj-GU-GOc">
-                                <rect key="frame" x="309" y="94" width="50" height="30"/>
+                                <rect key="frame" x="95" y="94" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99111156509999998" green="1" blue="0.02383403051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.90446496377051155" green="0.92025582901554404" blue="0.026422564879716868" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="yellow"/>
                                 <connections>
                                     <action selector="selectcoloryellow" destination="BYZ-38-t0r" eventType="touchUpInside" id="B7h-o1-CSF"/>
@@ -96,16 +87,55 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bql-0M-cNy">
+                                <rect key="frame" x="170" y="94" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.7769867573" green="0.69314590180000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="purple"/>
+                                <connections>
+                                    <action selector="selectcolorpurple" destination="BYZ-38-t0r" eventType="touchUpInside" id="EoD-nE-dKT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Es8-Ty-5Tz">
+                                <rect key="frame" x="241" y="94" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.78094994449999999" blue="0.28045522029999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="orange"/>
+                                <connections>
+                                    <action selector="selectcolororange" destination="BYZ-38-t0r" eventType="touchUpInside" id="aCk-zm-QIV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUU-S6-GQc">
+                                <rect key="frame" x="170" y="37" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.70748275940000005" green="0.99153116230000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="blue"/>
+                                <connections>
+                                    <action selector="selectcolorblue" destination="BYZ-38-t0r" eventType="touchUpInside" id="I3H-ek-bx9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUg-pH-yWr">
+                                <rect key="frame" x="309" y="94" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.99492704539999999" blue="0.57385547140000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="cream"/>
+                                <connections>
+                                    <action selector="selectcolorcream" destination="BYZ-38-t0r" eventType="touchUpInside" id="me7-y6-AFS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="setting" image="ギアアイコン (2).png" selectedImage="ギアアイコン (2).png" id="ktb-Ms-oBh"/>
                     <connections>
-                        <outlet property="blueButton" destination="c4l-B0-RD7" id="Ywa-bK-vT1"/>
+                        <outlet property="blueButton" destination="rUU-S6-GQc" id="8dG-Ib-gfK"/>
                         <outlet property="characterTable" destination="Xk1-VR-KIe" id="QGV-ja-kRI"/>
+                        <outlet property="creamButton" destination="IUg-pH-yWr" id="QHG-Ff-GA5"/>
                         <outlet property="greenButton" destination="aOT-hM-UCo" id="TCk-GJ-oca"/>
+                        <outlet property="orangeButton" destination="Es8-Ty-5Tz" id="HnM-3o-szs"/>
                         <outlet property="pinkButton" destination="1nl-v0-keX" id="CGU-pI-hsO"/>
+                        <outlet property="purpleButton" destination="bql-0M-cNy" id="ZQ0-jT-C8B"/>
                         <outlet property="whiteButton" destination="qf3-1J-Wd4" id="cHQ-Gi-Vqi"/>
                         <outlet property="yellowButton" destination="0aj-GU-GOc" id="g17-oY-wPF"/>
                     </connections>

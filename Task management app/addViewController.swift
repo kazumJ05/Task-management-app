@@ -10,7 +10,7 @@ import UIKit
 
 class addViewController: UIViewController, UITextFieldDelegate {
     
-    var timercount: Int = 7200
+    var timercount: Int = 0
     var timerhour: Int = 0
     var timerminute: Int = 0
     var timersecond: Int = 0
