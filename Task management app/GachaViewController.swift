@@ -19,7 +19,6 @@ class GachaViewController: UIViewController {
     var colornumber: Int = 1
     var oldPt: Int = 0
     var afterGachaPt: Int = 0
-    var selectCharacterFromGacha: Int = 0
     
     @IBOutlet var nowPtLabel: UILabel!
 
@@ -37,7 +36,7 @@ class GachaViewController: UIViewController {
             self.present(aleat, animated: true, completion: nil)
         }else{
             afterGachaPt = oldPt - 10
-            selectCharacterFromGacha = Int(arc4random())
+            performSegue(withIdentifier: "toResutlView", sender: nil)
         }
     }
     

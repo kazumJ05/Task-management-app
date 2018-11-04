@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		013663DB218ECE68007ADC07 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013663DA218ECE68007ADC07 /* ResultViewController.swift */; };
 		015BD7C32144E31400900AEC /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BD7C12144E31400900AEC /* ListTableViewCell.swift */; };
 		015BD7C42144E31400900AEC /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015BD7C22144E31400900AEC /* ListTableViewCell.xib */; };
 		015BD7C62144E94D00900AEC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BD7C52144E94D00900AEC /* TabBarController.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		013663DA218ECE68007ADC07 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		015BD7C12144E31400900AEC /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		015BD7C22144E31400900AEC /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		015BD7C52144E94D00900AEC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				015BD7CB2144E9FA00900AEC /* GachaViewController.swift */,
 				01C211D7217C5A2C00B1431C /* CharacterListTableViewCell.swift */,
 				01C211D8217C5A2C00B1431C /* CharacterListTableViewCell.xib */,
+				013663DA218ECE68007ADC07 /* ResultViewController.swift */,
 			);
 			path = "Task management app";
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				015BD7C82144E97100900AEC /* addViewController.swift in Sources */,
 				01C211D9217C5A2C00B1431C /* CharacterListTableViewCell.swift in Sources */,
 				015BD7C32144E31400900AEC /* ListTableViewCell.swift in Sources */,
+				013663DB218ECE68007ADC07 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

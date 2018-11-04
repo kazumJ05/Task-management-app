@@ -189,6 +189,7 @@
                                 </state>
                                 <connections>
                                     <action selector="selectmawasu" destination="71b-yf-6hH" eventType="touchUpInside" id="MTi-U7-H0c"/>
+                                    <segue destination="3cm-bz-VUD" kind="presentation" identifier="toResultView" modalTransitionStyle="crossDissolve" id="si9-5G-7Fa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -203,6 +204,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HRG-k0-X3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2796" y="-625.63718140929541"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="PpC-Cc-BIC">
+            <objects>
+                <viewController id="3cm-bz-VUD" customClass="ResultViewController" customModule="Task_management_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pgM-zj-53a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sEy-hZ-97e">
+                                <rect key="frame" x="66" y="84" width="243" height="243"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OD5-zn-Fy1">
+                                <rect key="frame" x="126" y="422" width="122" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.4045906843" green="0.31204705469999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" red="1" green="0.99492704539999999" blue="0.57385547140000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectbackWithSegle:" destination="3cm-bz-VUD" eventType="touchUpInside" id="cOh-3c-CVP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3rI-ke-MaS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="azR-3r-9WB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2796" y="158.77061469265368"/>
         </scene>
         <!--add-->
         <scene sceneID="Xhq-Q9-gDW">
