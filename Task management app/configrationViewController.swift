@@ -11,7 +11,7 @@ import UIKit
 class configrationViewController: UIViewController, UITableViewDataSource{
     
     var characterDataArray: [Dictionary<String, String>] = []
-    var colorDataArray: [Dictionary<String, Int>] = []
+    var characterImageArray: [Dictionary<String, UIImage>] = []
     var colornumber: Int = 1
     
     let colorSaveData = UserDefaults.standard
@@ -29,136 +29,62 @@ class configrationViewController: UIViewController, UITableViewDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if colornumber == 1{
+    // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if colorSaveData.object(forKey: "COLOR") != nil {
+            colornumber = colorSaveData.object(forKey: "COLOR") as! Int
+        }
+        
+        print(colornumber)
+        
+        switch colornumber {
             
-            self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        case 1:
+            
+            self.view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             whiteButton.isHidden = true
-            blueButton.isHidden = false
-            greenButton.isHidden = false
-            pinkButton.isHidden = false
-            yellowButton.isHidden = false
-            purpleButton.isHidden = false
-            orangeButton.isHidden = false
-            creamButton.isHidden = false
-            colornumber = 1
-            let colorSet = ["colorData": colornumber]
-            colorDataArray.append(colorSet)
-            colorSaveData.set(colorDataArray, forKey: "COLOR")
             
-        }else if colornumber == 2{
+        case 2:
             
             self.view.backgroundColor = #colorLiteral(red: 0.7074827594, green: 0.9915311623, blue: 1, alpha: 1)
-            whiteButton.isHidden = false
             blueButton.isHidden = true
-            greenButton.isHidden = false
-            pinkButton.isHidden = false
-            yellowButton.isHidden = false
-            purpleButton.isHidden = false
-            orangeButton.isHidden = false
-            creamButton.isHidden = false
-            colornumber = 2
-            let colorSet = ["colorData": colornumber]
-            colorDataArray.append(colorSet)
-            colorSaveData.set(colorDataArray, forKey: "COLOR")
-
-        }else if colornumber == 3 {
+            
+        case 3:
             
             self.view.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
-            whiteButton.isHidden = false
-            blueButton.isHidden = false
             greenButton.isHidden = true
-            pinkButton.isHidden = false
-            yellowButton.isHidden = false
-            purpleButton.isHidden = false
-            orangeButton.isHidden = false
-            creamButton.isHidden = false
-            colornumber = 3
-            let colorSet = ["colorData": colornumber]
-            colorDataArray.append(colorSet)
-            colorSaveData.set(colorDataArray, forKey: "COLOR")
             
-        }else if colornumber == 4 {
+        case 4:
             
             self.view.backgroundColor = #colorLiteral(red: 1, green: 0.7012115478, blue: 0.9455770609, alpha: 1)
-            whiteButton.isHidden = false
-            blueButton.isHidden = false
-            greenButton.isHidden = false
             pinkButton.isHidden = true
-            yellowButton.isHidden = false
-            purpleButton.isHidden = false
-            orangeButton.isHidden = false
-            creamButton.isHidden = false
-            colornumber = 4
-            let colorSet = ["colorData": colornumber]
-            colorDataArray.append(colorSet)
-            colorSaveData.set(colorDataArray, forKey: "COLOR")
             
-        }else if colornumber == 5 {
+        case 5:
             
             self.view.backgroundColor = #colorLiteral(red: 0.9044649638, green: 0.920255829, blue: 0.02642256488, alpha: 1)
-            whiteButton.isHidden = false
-            blueButton.isHidden = false
-            greenButton.isHidden = false
-            pinkButton.isHidden = false
             yellowButton.isHidden = true
-            purpleButton.isHidden = false
-            orangeButton.isHidden = false
-            creamButton.isHidden = false
-            colornumber = 5
-            let colorSet = ["colorData": colornumber]
-            colorDataArray.append(colorSet)
-            colorSaveData.set(colorDataArray, forKey: "COLOR")
             
-        }else if colornumber == 6 {
+        case 6:
             
             self.view.backgroundColor = #colorLiteral(red: 0.7769867573, green: 0.6931459018, blue: 1, alpha: 1)
-            whiteButton.isHidden = false
-            blueButton.isHidden = false
-            greenButton.isHidden = false
-            pinkButton.isHidden = false
-            yellowButton.isHidden = false
             purpleButton.isHidden = true
-            orangeButton.isHidden = false
-            creamButton.isHidden = false
-            colornumber = 6
-            let colorSet = ["colorData": colornumber]
-            colorDataArray.append(colorSet)
-            colorSaveData.set(colorDataArray, forKey: "COLOR")
             
-        }else if colornumber == 7{
+        case 7:
             
             self.view.backgroundColor = #colorLiteral(red: 1, green: 0.7809499445, blue: 0.2804552203, alpha: 1)
-            whiteButton.isHidden = false
-            blueButton.isHidden = false
-            greenButton.isHidden = false
-            pinkButton.isHidden = false
-            yellowButton.isHidden = false
-            purpleButton.isHidden = false
             orangeButton.isHidden = true
-            creamButton.isHidden = false
-            colornumber = 7
-            let colorSet = ["colorData": colornumber]
-            colorDataArray.append(colorSet)
-            colorSaveData.set(colorDataArray, forKey: "COLOR")
             
-        }else if colornumber == 8 {
+        case 8:
             
             self.view.backgroundColor = #colorLiteral(red: 1, green: 0.9949270454, blue: 0.5738554714, alpha: 1)
-            whiteButton.isHidden = false
-            blueButton.isHidden = false
-            greenButton.isHidden = false
-            pinkButton.isHidden = false
-            yellowButton.isHidden = false
-            purpleButton.isHidden = false
-            orangeButton.isHidden = false
             creamButton.isHidden = true
-            colornumber = 8
-            let colorSet = ["colorData": colornumber]
-            colorDataArray.append(colorSet)
-            colorSaveData.set(colorDataArray, forKey: "COLOR")
+            
+        default:
+            break
         }
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func selectcolorwhite(){
@@ -173,9 +99,7 @@ class configrationViewController: UIViewController, UITableViewDataSource{
         orangeButton.isHidden = false
         creamButton.isHidden = false
         colornumber = 1
-        let colorSet = ["colorData": colornumber]
-        colorDataArray.append(colorSet)
-        colorSaveData.set(colorDataArray, forKey: "COLOR")
+        colorSaveData.set(colornumber, forKey: "COLOR")
     }
     
     @IBAction func selectcolorblue(){
@@ -190,9 +114,7 @@ class configrationViewController: UIViewController, UITableViewDataSource{
         orangeButton.isHidden = false
         creamButton.isHidden = false
         colornumber = 2
-        let colorSet = ["colorData": colornumber]
-        colorDataArray.append(colorSet)
-        colorSaveData.set(colorDataArray, forKey: "COLOR")
+        colorSaveData.set(colornumber, forKey: "COLOR")
     }
     
     @IBAction func selectcolorgreen(){
@@ -207,9 +129,7 @@ class configrationViewController: UIViewController, UITableViewDataSource{
         orangeButton.isHidden = false
         creamButton.isHidden = false
         colornumber = 3
-        let colorSet = ["colorData": colornumber]
-        colorDataArray.append(colorSet)
-        colorSaveData.set(colorDataArray, forKey: "COLOR")
+        colorSaveData.set(colornumber, forKey: "COLOR")
     }
     
     @IBAction func selectcolorpink(){
@@ -224,9 +144,7 @@ class configrationViewController: UIViewController, UITableViewDataSource{
         orangeButton.isHidden = false
         creamButton.isHidden = false
         colornumber = 4
-        let colorSet = ["colorData": colornumber]
-        colorDataArray.append(colorSet)
-        colorSaveData.set(colorDataArray, forKey: "COLOR")
+        colorSaveData.set(colornumber, forKey: "COLOR")
     }
     
     @IBAction func selectcoloryellow(){
@@ -241,9 +159,7 @@ class configrationViewController: UIViewController, UITableViewDataSource{
         orangeButton.isHidden = false
         creamButton.isHidden = false
         colornumber = 5
-        let colorSet = ["colorData": colornumber]
-        colorDataArray.append(colorSet)
-        colorSaveData.set(colorDataArray, forKey: "COLOR")
+        colorSaveData.set(colornumber, forKey: "COLOR")
     }
     
     @IBAction func selectcolorpurple(){
@@ -258,9 +174,7 @@ class configrationViewController: UIViewController, UITableViewDataSource{
         orangeButton.isHidden = false
         creamButton.isHidden = false
         colornumber = 6
-        let colorSet = ["colorData": colornumber]
-        colorDataArray.append(colorSet)
-        colorSaveData.set(colorDataArray, forKey: "COLOR")
+        colorSaveData.set(colornumber, forKey: "COLOR")
     }
     
     @IBAction func selectcolororange(){
@@ -275,9 +189,7 @@ class configrationViewController: UIViewController, UITableViewDataSource{
         orangeButton.isHidden = true
         creamButton.isHidden = false
         colornumber = 7
-        let colorSet = ["colorData": colornumber]
-        colorDataArray.append(colorSet)
-        colorSaveData.set(colorDataArray, forKey: "COLOR")
+        colorSaveData.set(colornumber, forKey: "COLOR")
     }
     
     @IBAction func selectcolorcream(){
@@ -292,9 +204,7 @@ class configrationViewController: UIViewController, UITableViewDataSource{
         orangeButton.isHidden = false
         creamButton.isHidden = true
         colornumber = 8
-        let colorSet = ["colorData": colornumber]
-        colorDataArray.append(colorSet)
-        colorSaveData.set(colorDataArray, forKey: "COLOR")
+        colorSaveData.set(colornumber, forKey: "COLOR")
     }
 
     override func didReceiveMemoryWarning() {
@@ -315,7 +225,9 @@ class configrationViewController: UIViewController, UITableViewDataSource{
         
         let nowIndexPathDictionary = characterDataArray[indexPath.row]
         
-        //cell.characterImageView.image = nowIndexPathDictionary["character"]
+        let nowCharacterIndexPathDictionary = characterImageArray[indexPath.row]
+        
+        cell.characterImageView.image = nowCharacterIndexPathDictionary["image"]
         cell.nameLabel.text = nowIndexPathDictionary["name"]
         cell.LvLabel.text = nowIndexPathDictionary["Lv"]
         

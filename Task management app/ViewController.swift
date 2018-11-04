@@ -11,15 +11,16 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource{
     
     var studydataArray: [Dictionary<String, String>] = []
-    var colorDataArray: [Dictionary<String, Int>] = []
     var characterDataArray: [Dictionary<String, String>] = []
+    var characterImageArray: [Dictionary<String, UIImage>] = []
+    var colornumber: Int = 1
     
     let colorSaveData = UserDefaults.standard
     let savedata = UserDefaults.standard
     
     @IBOutlet var table: UITableView!
     @IBOutlet var lvlabel:UILabel!
-    @IBOutlet var charaImageView: UIImageView!
+    @IBOutlet var characterImageView: UIImageView!
     @IBOutlet var namelabel: UILabel!
     @IBOutlet var oldPtLabel: UILabel!
     
@@ -31,28 +32,66 @@ class ViewController: UIViewController, UITableViewDataSource{
         oldPtLabel.textAlignment = NSTextAlignment.right
         lvlabel.textAlignment = NSTextAlignment.right
         namelabel.textAlignment = NSTextAlignment.right
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
+        
         print(studydataArray)
-        print(colorDataArray)
+        
+        
         if savedata.array(forKey: "STUDYDATA") != nil{
             studydataArray = savedata.array(forKey: "STUDYDATA") as! [Dictionary<String, String>]
         }
         table.reloadData()
-        if colorSaveData.array(forKey: "COLOR") != nil{
-            colorDataArray = colorSaveData.array(forKey: "COLOR") as! [Dictionary<String, Int>]
+        
+        if colorSaveData.object(forKey: "COLOR") != nil {
+            colornumber = colorSaveData.object(forKey: "COLOR") as! Int
+        }
+        
+        print(colornumber)
+        
+        switch colornumber {
+            
+        case 1:
+            
+            self.view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            
+        case 2:
+            
+            self.view.backgroundColor = #colorLiteral(red: 0.7074827594, green: 0.9915311623, blue: 1, alpha: 1)
+            
+        case 3:
+            
+            self.view.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+            
+        case 4:
+            
+            self.view.backgroundColor = #colorLiteral(red: 1, green: 0.7012115478, blue: 0.9455770609, alpha: 1)
+            
+            
+        case 5:
+            
+            self.view.backgroundColor = #colorLiteral(red: 0.9044649638, green: 0.920255829, blue: 0.02642256488, alpha: 1)
+            
+            
+        case 6:
+            
+            self.view.backgroundColor = #colorLiteral(red: 0.7769867573, green: 0.6931459018, blue: 1, alpha: 1)
+            
+        case 7:
+            
+            self.view.backgroundColor = #colorLiteral(red: 1, green: 0.7809499445, blue: 0.2804552203, alpha: 1)
+            
+        case 8:
+            
+            self.view.backgroundColor = #colorLiteral(red: 1, green: 0.9949270454, blue: 0.5738554714, alpha: 1)
+            
+        default:
+            break
         }
     }
-    
-// override func viewWillAppear(_ animated: Bool) {
-//    super.viewWillAppear(true)
-//     if savedata.array(forKey: "STUDYDATA") != nil{
-//         studydataArray = savedata.array(forKey: "STUDYDATA") as! [Dictionary<String, String>]
-//     }
-//        table.reloadData()
-// }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -66,6 +105,9 @@ class ViewController: UIViewController, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ListTableViewCell
         
         let nowIndexPathDictionary = studydataArray[indexPath.row]
+//        let nowCharacterIndexPathDictionary = characterDataArray[indexPath.row]
+//        let nowCharacterImageIndexPathDictionary = characterImageArray[indexPath.row]
+        
         
         cell.subjectlabel.text = nowIndexPathDictionary["subject"]
         cell.datelabel.text = nowIndexPathDictionary["date"]
@@ -73,6 +115,10 @@ class ViewController: UIViewController, UITableViewDataSource{
         cell.timeminutelabel.text = nowIndexPathDictionary["minutetime"]
         cell.timehourlabel.text = nowIndexPathDictionary["hourtime"]
         oldPtLabel.text = nowIndexPathDictionary["pt"]
+//        characterImageView.image = nowCharacterImageIndexPathDictionary["image"]
+//        namelabel.text = nowCharacterIndexPathDictionary["name"]
+//        lvlabel.text = nowCharacterIndexPathDictionary["Lv"]
+        
         
         return cell
     }
