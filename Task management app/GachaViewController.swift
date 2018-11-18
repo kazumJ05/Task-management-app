@@ -13,12 +13,19 @@ class GachaViewController: UIViewController {
     var characterDataArray : [Dictionary<String, String>] = []
     var characterImageArray : [Dictionary<String, UIImage>] = []
     var studydataArray : [Dictionary<String, String>] = []
+    
+    let studyPtSaveData = UserDefaults.standard
     let colorSaveData = UserDefaults.standard
     let savedata = UserDefaults.standard
+    let getCharacterNumber = UserDefaults.standard
+    let characterNameDataArrayBeforeGet: [String] = ["", "", "", "", ""]
+    let characterImageDataArrayBeforeGet: [String] = ["", "", "", "", ""]
+    
     
     var colornumber: Int = 1
-    var oldPt: Int = 0
     var afterGachaPt: Int = 0
+    var studyPt: Int = 0
+    var getCharacterDataArrayNumber: Int = 0
     
     @IBOutlet var nowPtLabel: UILabel!
 
@@ -30,28 +37,41 @@ class GachaViewController: UIViewController {
     }
     
     @IBAction func selectmawasu(){
-        if oldPt < 10{
+        if studyPt < 10{
             let aleat = UIAlertController(title: "エラー", message:"ptが足りません", preferredStyle: .alert)
             aleat.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(aleat, animated: true, completion: nil)
         }else{
-            afterGachaPt = oldPt - 10
-            performSegue(withIdentifier: "toResutlView", sender: nil)
+            studyPt = studyPt - 10
+            performSegue(withIdentifier: "toResultView", sender: nil)
+            studyPtSaveData.set(studyPt, forKey: "STUDYPT")
+            getCharacterDataArrayNumber = Int(arc4random_uniform(5))
+            
+            getCharacterNumber.set(getCharacterDataArrayNumber, forKey: "GETCHARACTER")
+            
         }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         
         if savedata.array(forKey: "STUDYDATA") != nil{
+            
             studydataArray = savedata.array(forKey: "STUDYDATA") as! [Dictionary<String, String>]
+            
         }
         if colorSaveData.object(forKey: "COLOR") != nil {
         
             colornumber = colorSaveData.object(forKey: "COLOR") as! Int
+            
+        }
+        if studyPtSaveData.object(forKey: "STUDYPT") != nil{
+            
+            studyPt = studyPtSaveData.object(forKey: "STUDYPT") as! Int
+            nowPtLabel.text = String(studyPt)
+            
+            print(studyPt)
         }
         
-        let nowIndexPathDictionary = studydataArray.last
-        nowPtLabel.text = nowIndexPathDictionary?["pt"]
         
         
         switch colornumber {

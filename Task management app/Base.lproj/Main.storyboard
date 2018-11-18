@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QP4-Cc-Zpx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QP4-Cc-Zpx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -48,7 +48,6 @@
                                 <rect key="frame" x="241" y="37" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.70121154777239059" blue="0.94557706088313398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="pink"/>
                                 <connections>
                                     <action selector="selectcolorpink" destination="BYZ-38-t0r" eventType="touchUpInside" id="Acc-lu-fb9"/>
                                 </connections>
@@ -57,7 +56,6 @@
                                 <rect key="frame" x="309" y="37" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.79318906259999999" green="1" blue="0.52904352639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="green"/>
                                 <connections>
                                     <action selector="selectcolorgreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="pwJ-0w-L50"/>
                                 </connections>
@@ -66,7 +64,6 @@
                                 <rect key="frame" x="95" y="94" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90446496377051155" green="0.92025582901554404" blue="0.026422564879716868" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="yellow"/>
                                 <connections>
                                     <action selector="selectcoloryellow" destination="BYZ-38-t0r" eventType="touchUpInside" id="B7h-o1-CSF"/>
                                 </connections>
@@ -75,7 +72,6 @@
                                 <rect key="frame" x="95" y="37" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="white"/>
                                 <connections>
                                     <action selector="selectcolorwhite" destination="BYZ-38-t0r" eventType="touchUpInside" id="JdJ-PE-ocw"/>
                                 </connections>
@@ -91,7 +87,6 @@
                                 <rect key="frame" x="170" y="94" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.7769867573" green="0.69314590180000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="purple"/>
                                 <connections>
                                     <action selector="selectcolorpurple" destination="BYZ-38-t0r" eventType="touchUpInside" id="EoD-nE-dKT"/>
                                 </connections>
@@ -100,7 +95,6 @@
                                 <rect key="frame" x="241" y="94" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.78094994449999999" blue="0.28045522029999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="orange"/>
                                 <connections>
                                     <action selector="selectcolororange" destination="BYZ-38-t0r" eventType="touchUpInside" id="aCk-zm-QIV"/>
                                 </connections>
@@ -109,7 +103,6 @@
                                 <rect key="frame" x="170" y="37" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.70748275940000005" green="0.99153116230000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="blue"/>
                                 <connections>
                                     <action selector="selectcolorblue" destination="BYZ-38-t0r" eventType="touchUpInside" id="I3H-ek-bx9"/>
                                 </connections>
@@ -118,7 +111,6 @@
                                 <rect key="frame" x="309" y="94" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.99492704539999999" blue="0.57385547140000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="cream"/>
                                 <connections>
                                     <action selector="selectcolorcream" destination="BYZ-38-t0r" eventType="touchUpInside" id="me7-y6-AFS"/>
                                 </connections>
@@ -188,8 +180,7 @@
                                     <color key="titleColor" red="1" green="0.99492704539999999" blue="0.57385547140000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="selectmawasu" destination="71b-yf-6hH" eventType="touchUpInside" id="MTi-U7-H0c"/>
-                                    <segue destination="3cm-bz-VUD" kind="presentation" identifier="toResultView" modalTransitionStyle="crossDissolve" id="si9-5G-7Fa"/>
+                                    <action selector="selectmawasu" destination="71b-yf-6hH" eventType="touchUpInside" id="NPA-WV-5og"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -199,6 +190,7 @@
                     <tabBarItem key="tabBarItem" title="gacha" image="宝くじのアイコン.png" selectedImage="宝くじのアイコン.png" id="Fpi-GW-eY4"/>
                     <connections>
                         <outlet property="nowPtLabel" destination="itt-XT-WjO" id="VFU-gv-yeg"/>
+                        <segue destination="3cm-bz-VUD" kind="presentation" identifier="toResultView" id="95G-hf-mOR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HRG-k0-X3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -225,7 +217,7 @@
                                     <color key="titleColor" red="1" green="0.99492704539999999" blue="0.57385547140000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="selectbackWithSegle:" destination="3cm-bz-VUD" eventType="touchUpInside" id="cOh-3c-CVP"/>
+                                    <action selector="selectBack" destination="3cm-bz-VUD" eventType="touchUpInside" id="QUg-Pe-qWB"/>
                                 </connections>
                             </button>
                         </subviews>

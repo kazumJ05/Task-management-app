@@ -22,6 +22,7 @@ class addViewController: UIViewController, UITextFieldDelegate {
     
     let savedata = UserDefaults.standard
     let colorSaveData = UserDefaults.standard
+    let studyPtSaveData = UserDefaults.standard
     
     @IBOutlet var timesecondlabel: UILabel!
     @IBOutlet var timehourlabel: UILabel!
@@ -100,9 +101,10 @@ class addViewController: UIViewController, UITextFieldDelegate {
             
         }else{
             ptCount = oldPtCount + timerhour
-            let studyrireki = ["subject": subjecttextField.text!, "secondtime": String(timersecond), "minutetime": String(timerminute), "hourtime": String(timerhour), "date": String(gettoday()), "pt": String(ptCount)]
+            let studyrireki = ["subject": subjecttextField.text!, "secondtime": String(timersecond), "minutetime": String(timerminute), "hourtime": String(timerhour), "date": String(gettoday())]
             studydataArray.append(studyrireki)
             savedata.set(studydataArray, forKey: "STUDYDATA")
+            studyPtSaveData.set(ptCount, forKey: "STUDYPT")
             let aleat = UIAlertController(title: "保存完了", message: "保存が完了しました", preferredStyle: .alert)
             aleat.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(aleat, animated: true, completion: nil)

@@ -14,7 +14,9 @@ class ViewController: UIViewController, UITableViewDataSource{
     var characterDataArray: [Dictionary<String, String>] = []
     var characterImageArray: [Dictionary<String, UIImage>] = []
     var colornumber: Int = 1
+    var studyPt : Int = 0
     
+    let studyPtSaveData = UserDefaults.standard
     let colorSaveData = UserDefaults.standard
     let savedata = UserDefaults.standard
     
@@ -28,6 +30,7 @@ class ViewController: UIViewController, UITableViewDataSource{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
          table.register(UINib(nibName: "ListTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
+        
         table.rowHeight = 90
         oldPtLabel.textAlignment = NSTextAlignment.right
         lvlabel.textAlignment = NSTextAlignment.right
@@ -48,6 +51,11 @@ class ViewController: UIViewController, UITableViewDataSource{
         
         if colorSaveData.object(forKey: "COLOR") != nil {
             colornumber = colorSaveData.object(forKey: "COLOR") as! Int
+        }
+        
+        if studyPtSaveData.object(forKey: "STUDYPT") != nil{
+            studyPt = studyPtSaveData.object(forKey: "STUDYPT") as! Int
+            oldPtLabel.text = String(studyPt)
         }
         
         print(colornumber)
@@ -105,20 +113,18 @@ class ViewController: UIViewController, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ListTableViewCell
         
         let nowIndexPathDictionary = studydataArray[indexPath.row]
-//        let nowCharacterIndexPathDictionary = characterDataArray[indexPath.row]
-//        let nowCharacterImageIndexPathDictionary = characterImageArray[indexPath.row]
-        
+//      let nowCharacterIndexPathDictionary = characterDataArray[indexPath.row]
+//      let nowCharacterImageIndexPathDictionary = characterImageArray[indexPath.row]
         
         cell.subjectlabel.text = nowIndexPathDictionary["subject"]
         cell.datelabel.text = nowIndexPathDictionary["date"]
         cell.timecountlabel.text = nowIndexPathDictionary["secondtime"]
         cell.timeminutelabel.text = nowIndexPathDictionary["minutetime"]
         cell.timehourlabel.text = nowIndexPathDictionary["hourtime"]
-        oldPtLabel.text = nowIndexPathDictionary["pt"]
-//        characterImageView.image = nowCharacterImageIndexPathDictionary["image"]
-//        namelabel.text = nowCharacterIndexPathDictionary["name"]
-//        lvlabel.text = nowCharacterIndexPathDictionary["Lv"]
         
+//      characterImageView.image = nowCharacterImageIndexPathDictionary["image"]
+//      namelabel.text = nowCharacterIndexPathDictionary["name"]
+//      lvlabel.text = nowCharacterIndexPathDictionary["Lv"]
         
         return cell
     }
