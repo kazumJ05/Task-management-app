@@ -11,13 +11,19 @@ import UIKit
 class ResultViewController: UIViewController {
     
     var colorNumber: Int = 0
-    var getCharacterArrayNumber: Int = 0
+    var getCharacterDataArrayNumber: Int!
+    var characterDataArray : [Dictionary<String, String>] = []
+    var characterImageArray : [Dictionary<String, String>] = []
     
+    @IBOutlet var characterImageView: UIImageView!
+    @IBOutlet var characterNameLabel: UILabel!
     
     let colorSavaData = UserDefaults.standard
     let getCharacterNumber = UserDefaults.standard
-    let characterNameDataArrayBeforeGet: [String] = ["", "", "", "", ""]
-    let characterImageDataArrayBeforeGet: [String] = ["", "", "", "", ""]
+    let characterNameSaveData = UserDefaults.standard
+    let characterImageSaveData = UserDefaults.standard
+    let characterNameDataArrayBeforeGet: [String] = ["plus", "minus", "division", "kakeru", "equal"]
+    let characterImageDataArrayBeforeGet: [String] = ["plus.png", "minus.png", "waru.png", "kakeru.png", "equal.png"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,11 +42,86 @@ class ResultViewController: UIViewController {
             colorNumber = colorSavaData.object(forKey: "COLOR") as! Int
             
         }
-        if getCharacterNumber.object(forKey: "GETCHARACTER") != nil{
-            
-            getCharacterArrayNumber = getCharacterNumber.object(forKey: "GETCHARACTER") as! Int
-            
+//        if getCharacterNumber.object(forKey: "GETCHARACTER") != nil{
+//
+//            getCharacterDataArrayNumber = getCharacterNumber.object(forKey:"GETCHARACTER") as? Int
+        
+            print(getCharacterDataArrayNumber)
+//        }
+        
+        switch getCharacterDataArrayNumber {
+        case 0:
+
+            characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[0])
+            characterNameLabel.text = characterNameDataArrayBeforeGet[0]
+
+            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[0]]
+            characterDataArray.append(getCharacter)
+            characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
+
+            let getCharacterImage = ["characterImage": characterImageDataArrayBeforeGet[0]]
+            characterImageArray.append(getCharacterImage)
+            characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
+
+        case 1:
+
+            characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[1])
+            characterNameLabel.text = characterNameDataArrayBeforeGet[1]
+
+            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[1]]
+            characterDataArray.append(getCharacter)
+            characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
+
+            let getCharacterImage = ["characterImage": characterImageDataArrayBeforeGet[1]]
+            characterImageArray.append(getCharacterImage)
+            characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
+
+        case 2:
+
+            characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[2])
+            characterNameLabel.text = characterNameDataArrayBeforeGet[2]
+
+            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[2]]
+            characterDataArray.append(getCharacter)
+            characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
+
+            let getCharacterImage = ["characterImage": characterImageDataArrayBeforeGet[2]]
+            characterImageArray.append(getCharacterImage)
+            characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
+
+
+        case 3:
+
+            characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[3])
+            characterNameLabel.text = characterNameDataArrayBeforeGet[3]
+
+            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[3]]
+            characterDataArray.append(getCharacter)
+            characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
+
+            let getCharacterImage = ["characterImage": characterImageDataArrayBeforeGet[3]]
+            characterImageArray.append(getCharacterImage)
+            characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
+
+
+        case 4:
+
+            characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[4])
+            characterNameLabel.text = characterNameDataArrayBeforeGet[4]
+
+            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[4]]
+            characterDataArray.append(getCharacter)
+            characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
+
+            let getCharacterImage = ["characterImage": characterImageDataArrayBeforeGet[4]]
+            characterImageArray.append(getCharacterImage)
+            characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
+
+        default:
+            break
         }
+        
+        
         
         switch colorNumber {
             

@@ -11,14 +11,16 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource{
     
     var studydataArray: [Dictionary<String, String>] = []
-    var characterDataArray: [Dictionary<String, String>] = []
-    var characterImageArray: [Dictionary<String, UIImage>] = []
+    var characterDataArray : [Dictionary<String, String>] = []
+    var characterImageArray : [Dictionary<String, String>] = []
     var colornumber: Int = 1
     var studyPt : Int = 0
     
     let studyPtSaveData = UserDefaults.standard
     let colorSaveData = UserDefaults.standard
     let savedata = UserDefaults.standard
+    let characterNameSaveData = UserDefaults.standard
+    let characterImageSaveData = UserDefaults.standard
     
     @IBOutlet var table: UITableView!
     @IBOutlet var lvlabel:UILabel!
@@ -57,6 +59,15 @@ class ViewController: UIViewController, UITableViewDataSource{
             studyPt = studyPtSaveData.object(forKey: "STUDYPT") as! Int
             oldPtLabel.text = String(studyPt)
         }
+        
+        if characterImageSaveData.array(forKey: "CHARACTERNAME") != nil{
+            characterDataArray = characterNameSaveData.array(forKey: "CHARACTERNAME") as! [Dictionary<String, String>]
+        }
+        
+        if characterImageSaveData.array(forKey: "CHARACTERIMAGE") != nil{
+            characterImageArray = characterImageSaveData.array(forKey: "CHARACTERIMAGE") as! [Dictionary< String, String>]
+        }
+        
         
         print(colornumber)
         
@@ -113,8 +124,8 @@ class ViewController: UIViewController, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ListTableViewCell
         
         let nowIndexPathDictionary = studydataArray[indexPath.row]
-//      let nowCharacterIndexPathDictionary = characterDataArray[indexPath.row]
-//      let nowCharacterImageIndexPathDictionary = characterImageArray[indexPath.row]
+//        let nowCharacterIndexPathDictionary = characterDataArray[indexPath.row]
+//        let nowCharacterImageIndexPathDictionary = characterImageArray[indexPath.row]
         
         cell.subjectlabel.text = nowIndexPathDictionary["subject"]
         cell.datelabel.text = nowIndexPathDictionary["date"]
@@ -122,9 +133,9 @@ class ViewController: UIViewController, UITableViewDataSource{
         cell.timeminutelabel.text = nowIndexPathDictionary["minutetime"]
         cell.timehourlabel.text = nowIndexPathDictionary["hourtime"]
         
-//      characterImageView.image = nowCharacterImageIndexPathDictionary["image"]
-//      namelabel.text = nowCharacterIndexPathDictionary["name"]
-//      lvlabel.text = nowCharacterIndexPathDictionary["Lv"]
+//        characterImageView.image = nowCharacterImageIndexPathDictionary["characterImage"]
+//        namelabel.text = nowCharacterIndexPathDictionary["characterName"]
+//        lvlabel.text = nowCharacterIndexPathDictionary["characterLv"]
         
         return cell
     }

@@ -11,10 +11,14 @@ import UIKit
 class configrationViewController: UIViewController, UITableViewDataSource{
     
     var characterDataArray: [Dictionary<String, String>] = []
-    var characterImageArray: [Dictionary<String, UIImage>] = []
+    var characterImageArray: [Dictionary<String, String>] = []
     var colornumber: Int = 1
     
     let colorSaveData = UserDefaults.standard
+    let characterNameSaveData = UserDefaults.standard
+    let characterImageSaveData = UserDefaults.standard
+    let characterNameDataArrayBeforeGet: [String] = ["plus", "minus", "division", "kakeru", "equal"]
+    let characterImageDataArrayBeforeGet: [String] = ["plus.png", "minus.png", "waru.png", "kakeru.png", "equal.png"]
     
     @IBOutlet var characterTable: UITableView!
     @IBOutlet var whiteButton: UIButton!
@@ -36,6 +40,14 @@ class configrationViewController: UIViewController, UITableViewDataSource{
         
         if colorSaveData.object(forKey: "COLOR") != nil {
             colornumber = colorSaveData.object(forKey: "COLOR") as! Int
+        }
+        
+        if characterNameSaveData.array(forKey: "CHARACTERNAME") != nil{
+            characterDataArray = characterNameSaveData.array(forKey: "CHARACTERNAME") as! [Dictionary<String, String>]
+        }
+        
+        if characterImageSaveData.array(forKey: "CHARACTERIMAGE") != nil{
+            characterImageArray = characterImageSaveData.array(forKey: "CHARACTERIMAGE") as! [Dictionary<String, String>]
         }
         
         print(colornumber)
@@ -227,9 +239,9 @@ class configrationViewController: UIViewController, UITableViewDataSource{
         
         let nowCharacterIndexPathDictionary = characterImageArray[indexPath.row]
         
-        cell.characterImageView.image = nowCharacterIndexPathDictionary["image"]
-        cell.nameLabel.text = nowIndexPathDictionary["name"]
-        cell.LvLabel.text = nowIndexPathDictionary["Lv"]
+        cell.characterImageView.image = UIImage(named: characterImageSaveData[])
+        cell.nameLabel.text = characterNameSaveData
+        cell.LvLabel.text = nowIndexPathDictionary["characterLv"]
         
         return cell
     }

@@ -18,8 +18,8 @@ class GachaViewController: UIViewController {
     let colorSaveData = UserDefaults.standard
     let savedata = UserDefaults.standard
     let getCharacterNumber = UserDefaults.standard
-    let characterNameDataArrayBeforeGet: [String] = ["", "", "", "", ""]
-    let characterImageDataArrayBeforeGet: [String] = ["", "", "", "", ""]
+    let characterNameDataArrayBeforeGet: [String] = ["plus", "minus", "division", "kakeru", "equal"]
+    let characterImageDataArrayBeforeGet: [String] = ["plus.png", "minus.png", "waru.png", "kakeru.png", "equal.png"]
     
     
     var colornumber: Int = 1
@@ -42,13 +42,20 @@ class GachaViewController: UIViewController {
             aleat.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(aleat, animated: true, completion: nil)
         }else{
+            
             studyPt = studyPt - 10
-            performSegue(withIdentifier: "toResultView", sender: nil)
             studyPtSaveData.set(studyPt, forKey: "STUDYPT")
-            getCharacterDataArrayNumber = Int(arc4random_uniform(5))
+            getCharacterDataArrayNumber = Int(arc4random_uniform(4))
             
-            getCharacterNumber.set(getCharacterDataArrayNumber, forKey: "GETCHARACTER")
             
+            performSegue(withIdentifier: "toResultView", sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toResultView"{
+            let resultVC = segue.destination as! ResultViewController
+            resultVC.getCharacterDataArrayNumber = getCharacterDataArrayNumber
         }
     }
     

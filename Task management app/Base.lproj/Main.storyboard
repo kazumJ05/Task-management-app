@@ -190,7 +190,7 @@
                     <tabBarItem key="tabBarItem" title="gacha" image="宝くじのアイコン.png" selectedImage="宝くじのアイコン.png" id="Fpi-GW-eY4"/>
                     <connections>
                         <outlet property="nowPtLabel" destination="itt-XT-WjO" id="VFU-gv-yeg"/>
-                        <segue destination="3cm-bz-VUD" kind="presentation" identifier="toResultView" id="95G-hf-mOR"/>
+                        <segue destination="3cm-bz-VUD" kind="presentation" identifier="toResultView" id="SGL-tN-9Gf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HRG-k0-X3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -210,7 +210,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OD5-zn-Fy1">
-                                <rect key="frame" x="126" y="422" width="122" height="81"/>
+                                <rect key="frame" x="126" y="459" width="122" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.4045906843" green="0.31204705469999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="戻る">
@@ -220,10 +220,28 @@
                                     <action selector="selectBack" destination="3cm-bz-VUD" eventType="touchUpInside" id="QUg-Pe-qWB"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="By7-bB-mfm">
+                                <rect key="frame" x="91" y="385" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1j-3N-pYe">
+                                <rect key="frame" x="186" y="385" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="3rI-ke-MaS"/>
                     </view>
+                    <connections>
+                        <outlet property="characterImageView" destination="sEy-hZ-97e" id="oHb-QM-wFc"/>
+                        <outlet property="characterNameLabel" destination="Z1j-3N-pYe" id="CI3-cd-rOe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="azR-3r-9WB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

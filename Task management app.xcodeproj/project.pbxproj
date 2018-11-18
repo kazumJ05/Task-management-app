@@ -18,6 +18,11 @@
 		015BD7D62144EE5D00900AEC /* 家の無料アイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 015BD7D52144EE5D00900AEC /* 家の無料アイコン.png */; };
 		015BD7D82144F03100900AEC /* プラスのアイコン素材.png in Resources */ = {isa = PBXBuildFile; fileRef = 015BD7D72144F03100900AEC /* プラスのアイコン素材.png */; };
 		015BD7DA2144F03B00900AEC /* 宝くじのアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 015BD7D92144F03A00900AEC /* 宝くじのアイコン.png */; };
+		01AD462621A125AA0041BE47 /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 01AD462521A125AA0041BE47 /* minus.png */; };
+		01AD462821A125B00041BE47 /* equal.png in Resources */ = {isa = PBXBuildFile; fileRef = 01AD462721A125B00041BE47 /* equal.png */; };
+		01AD462A21A125B70041BE47 /* kakeru.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01AD462921A125B70041BE47 /* kakeru.jpg */; };
+		01AD462C21A125C90041BE47 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 01AD462B21A125C90041BE47 /* plus.png */; };
+		01AD462E21A125D70041BE47 /* waru.png in Resources */ = {isa = PBXBuildFile; fileRef = 01AD462D21A125D70041BE47 /* waru.png */; };
 		01C211D9217C5A2C00B1431C /* CharacterListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C211D7217C5A2C00B1431C /* CharacterListTableViewCell.swift */; };
 		01C211DA217C5A2C00B1431C /* CharacterListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01C211D8217C5A2C00B1431C /* CharacterListTableViewCell.xib */; };
 		01DB32EF21044F9800EC13D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB32EE21044F9800EC13D2 /* AppDelegate.swift */; };
@@ -58,6 +63,11 @@
 		015BD7D52144EE5D00900AEC /* 家の無料アイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "家の無料アイコン.png"; sourceTree = "<group>"; };
 		015BD7D72144F03100900AEC /* プラスのアイコン素材.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "プラスのアイコン素材.png"; sourceTree = "<group>"; };
 		015BD7D92144F03A00900AEC /* 宝くじのアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宝くじのアイコン.png"; sourceTree = "<group>"; };
+		01AD462521A125AA0041BE47 /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
+		01AD462721A125B00041BE47 /* equal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = equal.png; sourceTree = "<group>"; };
+		01AD462921A125B70041BE47 /* kakeru.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kakeru.jpg; sourceTree = "<group>"; };
+		01AD462B21A125C90041BE47 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		01AD462D21A125D70041BE47 /* waru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waru.png; sourceTree = "<group>"; };
 		01C211D7217C5A2C00B1431C /* CharacterListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListTableViewCell.swift; sourceTree = "<group>"; };
 		01C211D8217C5A2C00B1431C /* CharacterListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterListTableViewCell.xib; sourceTree = "<group>"; };
 		01DB32EB21044F9800EC13D2 /* Task management app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task management app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +133,11 @@
 		01DB32ED21044F9800EC13D2 /* Task management app */ = {
 			isa = PBXGroup;
 			children = (
+				01AD462921A125B70041BE47 /* kakeru.jpg */,
+				01AD462D21A125D70041BE47 /* waru.png */,
+				01AD462521A125AA0041BE47 /* minus.png */,
+				01AD462B21A125C90041BE47 /* plus.png */,
+				01AD462721A125B00041BE47 /* equal.png */,
 				015BD7D92144F03A00900AEC /* 宝くじのアイコン.png */,
 				015BD7D72144F03100900AEC /* プラスのアイコン素材.png */,
 				015BD7D52144EE5D00900AEC /* 家の無料アイコン.png */,
@@ -272,10 +287,15 @@
 				015BD7D42144EE0200900AEC /* ギアアイコン (2).png in Resources */,
 				01C211DA217C5A2C00B1431C /* CharacterListTableViewCell.xib in Resources */,
 				015BD7D82144F03100900AEC /* プラスのアイコン素材.png in Resources */,
+				01AD462A21A125B70041BE47 /* kakeru.jpg in Resources */,
 				015BD7C42144E31400900AEC /* ListTableViewCell.xib in Resources */,
+				01AD462C21A125C90041BE47 /* plus.png in Resources */,
 				015BD7D62144EE5D00900AEC /* 家の無料アイコン.png in Resources */,
+				01AD462E21A125D70041BE47 /* waru.png in Resources */,
 				01DB32F621044FA100EC13D2 /* Assets.xcassets in Resources */,
 				015BD7DA2144F03B00900AEC /* 宝くじのアイコン.png in Resources */,
+				01AD462621A125AA0041BE47 /* minus.png in Resources */,
+				01AD462821A125B00041BE47 /* equal.png in Resources */,
 				01DB32F421044F9800EC13D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
