@@ -15,12 +15,14 @@ class ViewController: UIViewController, UITableViewDataSource{
     var characterImageArray : [Dictionary<String, String>] = []
     var colornumber: Int = 1
     var studyPt : Int = 0
+    var selectedCell : Int? = nil
     
     let studyPtSaveData = UserDefaults.standard
     let colorSaveData = UserDefaults.standard
     let savedata = UserDefaults.standard
     let characterNameSaveData = UserDefaults.standard
     let characterImageSaveData = UserDefaults.standard
+    let setCharctCellData = UserDefaults.standard
     
     @IBOutlet var table: UITableView!
     @IBOutlet var lvlabel:UILabel!
@@ -45,7 +47,6 @@ class ViewController: UIViewController, UITableViewDataSource{
         
         print(studydataArray)
         
-        
         if savedata.array(forKey: "STUDYDATA") != nil{
             studydataArray = savedata.array(forKey: "STUDYDATA") as! [Dictionary<String, String>]
         }
@@ -60,7 +61,7 @@ class ViewController: UIViewController, UITableViewDataSource{
             oldPtLabel.text = String(studyPt)
         }
         
-        if characterImageSaveData.array(forKey: "CHARACTERNAME") != nil{
+        if characterNameSaveData.array(forKey: "CHARACTERNAME") != nil{
             characterDataArray = characterNameSaveData.array(forKey: "CHARACTERNAME") as! [Dictionary<String, String>]
         }
         
@@ -68,6 +69,20 @@ class ViewController: UIViewController, UITableViewDataSource{
             characterImageArray = characterImageSaveData.array(forKey: "CHARACTERIMAGE") as! [Dictionary< String, String>]
         }
         
+        if setCharctCellData.object(forKey: "SETCELLCHA") != nil{
+            
+            selectedCell = setCharctCellData.object(forKey: "SETCELLCHA") as! Int
+            
+            if selectedCell != nil{
+                
+//                lvlabel.text = String(characterDataArray[selectedCell!]["characterLv"]!)
+                characterImageView.image = UIImage(named: characterImageArray[selectedCell!]["characterImage"]! )
+                namelabel.text = String(characterDataArray[selectedCell!]["characterName"]!)
+                
+            }
+            
+        }
+       
         
         print(colornumber)
         
@@ -124,19 +139,13 @@ class ViewController: UIViewController, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ListTableViewCell
         
         let nowIndexPathDictionary = studydataArray[indexPath.row]
-//        let nowCharacterIndexPathDictionary = characterDataArray[indexPath.row]
-//        let nowCharacterImageIndexPathDictionary = characterImageArray[indexPath.row]
         
         cell.subjectlabel.text = nowIndexPathDictionary["subject"]
         cell.datelabel.text = nowIndexPathDictionary["date"]
         cell.timecountlabel.text = nowIndexPathDictionary["secondtime"]
         cell.timeminutelabel.text = nowIndexPathDictionary["minutetime"]
         cell.timehourlabel.text = nowIndexPathDictionary["hourtime"]
-        
-//        characterImageView.image = nowCharacterImageIndexPathDictionary["characterImage"]
-//        namelabel.text = nowCharacterIndexPathDictionary["characterName"]
-//        lvlabel.text = nowCharacterIndexPathDictionary["characterLv"]
-        
+    
         return cell
     }
     

@@ -48,6 +48,14 @@
                                 <rect key="frame" x="241" y="37" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.70121154777239059" blue="0.94557706088313398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="selectcolorpink" destination="BYZ-38-t0r" eventType="touchUpInside" id="Acc-lu-fb9"/>
                                 </connections>
@@ -56,6 +64,14 @@
                                 <rect key="frame" x="309" y="37" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.79318906259999999" green="1" blue="0.52904352639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="selectcolorgreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="pwJ-0w-L50"/>
                                 </connections>
@@ -64,6 +80,14 @@
                                 <rect key="frame" x="95" y="94" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90446496377051155" green="0.92025582901554404" blue="0.026422564879716868" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="selectcoloryellow" destination="BYZ-38-t0r" eventType="touchUpInside" id="B7h-o1-CSF"/>
                                 </connections>
@@ -72,6 +96,14 @@
                                 <rect key="frame" x="95" y="37" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="selectcolorwhite" destination="BYZ-38-t0r" eventType="touchUpInside" id="JdJ-PE-ocw"/>
                                 </connections>
@@ -87,6 +119,14 @@
                                 <rect key="frame" x="170" y="94" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.7769867573" green="0.69314590180000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="selectcolorpurple" destination="BYZ-38-t0r" eventType="touchUpInside" id="EoD-nE-dKT"/>
                                 </connections>
@@ -95,6 +135,14 @@
                                 <rect key="frame" x="241" y="94" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.78094994449999999" blue="0.28045522029999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="selectcolororange" destination="BYZ-38-t0r" eventType="touchUpInside" id="aCk-zm-QIV"/>
                                 </connections>
@@ -103,6 +151,14 @@
                                 <rect key="frame" x="170" y="37" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.70748275940000005" green="0.99153116230000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="selectcolorblue" destination="BYZ-38-t0r" eventType="touchUpInside" id="I3H-ek-bx9"/>
                                 </connections>
@@ -111,6 +167,14 @@
                                 <rect key="frame" x="309" y="94" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.99492704539999999" blue="0.57385547140000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="selectcolorcream" destination="BYZ-38-t0r" eventType="touchUpInside" id="me7-y6-AFS"/>
                                 </connections>
@@ -121,15 +185,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="setting" image="ギアアイコン (2).png" selectedImage="ギアアイコン (2).png" id="ktb-Ms-oBh"/>
                     <connections>
-                        <outlet property="blueButton" destination="rUU-S6-GQc" id="8dG-Ib-gfK"/>
                         <outlet property="characterTable" destination="Xk1-VR-KIe" id="QGV-ja-kRI"/>
-                        <outlet property="creamButton" destination="IUg-pH-yWr" id="QHG-Ff-GA5"/>
-                        <outlet property="greenButton" destination="aOT-hM-UCo" id="TCk-GJ-oca"/>
-                        <outlet property="orangeButton" destination="Es8-Ty-5Tz" id="HnM-3o-szs"/>
-                        <outlet property="pinkButton" destination="1nl-v0-keX" id="CGU-pI-hsO"/>
-                        <outlet property="purpleButton" destination="bql-0M-cNy" id="ZQ0-jT-C8B"/>
-                        <outlet property="whiteButton" destination="qf3-1J-Wd4" id="cHQ-Gi-Vqi"/>
-                        <outlet property="yellowButton" destination="0aj-GU-GOc" id="g17-oY-wPF"/>
+                        <outlet property="table" destination="Xk1-VR-KIe" id="A4o-Ba-11t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -175,10 +232,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOU-hp-8iN">
                                 <rect key="frame" x="121" y="341" width="133" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.4045906843" green="0.31204705469999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="回す">
-                                    <color key="titleColor" red="1" green="0.99492704539999999" blue="0.57385547140000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <color key="backgroundColor" red="0.79318906259999999" green="1" blue="0.52904352639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="回す"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="selectmawasu" destination="71b-yf-6hH" eventType="touchUpInside" id="NPA-WV-5og"/>
                                 </connections>
@@ -190,6 +253,7 @@
                     <tabBarItem key="tabBarItem" title="gacha" image="宝くじのアイコン.png" selectedImage="宝くじのアイコン.png" id="Fpi-GW-eY4"/>
                     <connections>
                         <outlet property="nowPtLabel" destination="itt-XT-WjO" id="VFU-gv-yeg"/>
+                        <outlet property="rollBut" destination="LOU-hp-8iN" id="izZ-15-gvO"/>
                         <segue destination="3cm-bz-VUD" kind="presentation" identifier="toResultView" id="SGL-tN-9Gf"/>
                     </connections>
                 </viewController>
@@ -212,10 +276,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OD5-zn-Fy1">
                                 <rect key="frame" x="126" y="459" width="122" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.4045906843" green="0.31204705469999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="戻る">
-                                    <color key="titleColor" red="1" green="0.99492704539999999" blue="0.57385547140000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <color key="backgroundColor" red="0.79318906259999999" green="1" blue="0.52904352639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="戻る"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="selectBack" destination="3cm-bz-VUD" eventType="touchUpInside" id="QUg-Pe-qWB"/>
                                 </connections>
@@ -241,6 +311,7 @@
                     <connections>
                         <outlet property="characterImageView" destination="sEy-hZ-97e" id="oHb-QM-wFc"/>
                         <outlet property="characterNameLabel" destination="Z1j-3N-pYe" id="CI3-cd-rOe"/>
+                        <outlet property="returnBut" destination="OD5-zn-Fy1" id="GoM-w3-Ojk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="azR-3r-9WB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -279,10 +350,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPx-s6-95m">
                                 <rect key="frame" x="137" y="403" width="101" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.4045906843" green="0.31204705469999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="保存">
-                                    <color key="titleColor" red="1" green="0.99492704539999999" blue="0.57385547140000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <color key="backgroundColor" red="0.79318906259999999" green="1" blue="0.52904352639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="保存"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="selectsave" destination="nBu-Hs-YKH" eventType="touchUpInside" id="TYx-CL-F5I"/>
                                 </connections>
@@ -332,10 +409,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIE-ZK-tcQ">
                                 <rect key="frame" x="137" y="181" width="101" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.4045906843" green="0.31204705469999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="start/stop">
-                                    <color key="titleColor" red="1" green="0.99492704539999999" blue="0.57385547140000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <color key="backgroundColor" red="0.79318906259999999" green="1" blue="0.52904352639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="start/stop"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="selectstartstop" destination="nBu-Hs-YKH" eventType="touchUpInside" id="QbB-J4-x5C"/>
                                 </connections>
@@ -346,6 +429,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="add" image="プラスのアイコン素材.png" selectedImage="プラスのアイコン素材.png" id="gG8-wF-lSm"/>
                     <connections>
+                        <outlet property="addBut" destination="WPx-s6-95m" id="e6G-nq-kCE"/>
+                        <outlet property="startStopBut" destination="uIE-ZK-tcQ" id="DRz-q9-qwO"/>
                         <outlet property="subjecttextField" destination="eLd-V2-9Me" id="A5O-Pt-i03"/>
                         <outlet property="timehourlabel" destination="D7q-8I-GDt" id="hZx-vV-KJ6"/>
                         <outlet property="timeminutelabel" destination="dhr-qC-aZ0" id="8Xl-Ht-GTA"/>
@@ -417,7 +502,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="学習履歴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIf-UD-mUm">
-                                <rect key="frame" x="16" y="219" width="115" height="21"/>
+                                <rect key="frame" x="16" y="219" width="72" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -438,7 +523,7 @@
                     <connections>
                         <outlet property="characterImageView" destination="m20-FF-mFy" id="UP7-9p-Gnx"/>
                         <outlet property="lvlabel" destination="Pbd-Yt-hpN" id="rYJ-tv-Mqq"/>
-                        <outlet property="namelabel" destination="qUj-AH-XLq" id="sex-Kj-LiC"/>
+                        <outlet property="namelabel" destination="qUj-AH-XLq" id="q1f-0h-sYc"/>
                         <outlet property="oldPtLabel" destination="iGn-Il-nAk" id="oah-R9-lbX"/>
                         <outlet property="table" destination="1qZ-ZT-dqZ" id="SQd-IM-nGu"/>
                     </connections>

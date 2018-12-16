@@ -16,6 +16,8 @@ class addViewController: UIViewController, UITextFieldDelegate {
     var timersecond: Int = 0
     var ptCount: Int = 0
     var oldPtCount: Int = 0
+    var lvPt: Int = 0
+    var oldLvPt: Int = 0
     var studydataArray: [Dictionary<String, String>] = []
     var timer: Timer = Timer()
     var colornumber: Int = 1
@@ -23,11 +25,14 @@ class addViewController: UIViewController, UITextFieldDelegate {
     let savedata = UserDefaults.standard
     let colorSaveData = UserDefaults.standard
     let studyPtSaveData = UserDefaults.standard
+    let lvPtSaveData = UserDefaults.standard
     
     @IBOutlet var timesecondlabel: UILabel!
     @IBOutlet var timehourlabel: UILabel!
     @IBOutlet var timeminutelabel: UILabel!
     @IBOutlet var subjecttextField: UITextField!
+    @IBOutlet var startStopBut: UIButton!
+    @IBOutlet var addBut: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,8 +48,13 @@ class addViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         
+        
         if colorSaveData.object(forKey: "COLOR") != nil {
             colornumber = colorSaveData.object(forKey: "COLOR") as! Int
+        }
+        
+        if studyPtSaveData.object(forKey: "STUDYPT") != nil{
+            oldPtCount = studyPtSaveData.object(forKey: "STUDYPT") as! Int
         }
         
         print(colornumber)
@@ -53,37 +63,69 @@ class addViewController: UIViewController, UITextFieldDelegate {
             
         case 1:
             
-            self.view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            startStopBut.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+            startStopBut.setTitleColor(#colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), for: .normal)
+            addBut.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+            addBut.setTitleColor(#colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), for: .normal)
             
         case 2:
             
             self.view.backgroundColor = #colorLiteral(red: 0.7074827594, green: 0.9915311623, blue: 1, alpha: 1)
+            startStopBut.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+            startStopBut.setTitleColor(#colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), for: .normal)
+            addBut.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+            addBut.setTitleColor(#colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), for: .normal)
             
         case 3:
             
             self.view.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+            startStopBut.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+            startStopBut.setTitleColor(#colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), for: .normal)
+            addBut.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+            addBut.setTitleColor(#colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), for: .normal)
             
         case 4:
             
             self.view.backgroundColor = #colorLiteral(red: 1, green: 0.7012115478, blue: 0.9455770609, alpha: 1)
+            startStopBut.backgroundColor = #colorLiteral(red: 0.4045906843, green: 0.3120470547, blue: 0.8078431373, alpha: 1)
+            startStopBut.setTitleColor(#colorLiteral(red: 1, green: 0.9949270454, blue: 0.5738554714, alpha: 1), for: .normal)
+            addBut.backgroundColor = #colorLiteral(red: 0.4045906843, green: 0.3120470547, blue: 0.8078431373, alpha: 1)
+            addBut.setTitleColor(#colorLiteral(red: 1, green: 0.9949270454, blue: 0.5738554714, alpha: 1), for: .normal)
             
             
         case 5:
             
             self.view.backgroundColor = #colorLiteral(red: 0.9044649638, green: 0.920255829, blue: 0.02642256488, alpha: 1)
+            startStopBut.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+            startStopBut.setTitleColor(#colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), for: .normal)
+            addBut.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+            addBut.setTitleColor(#colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), for: .normal)
             
             
         case 6:
             
             self.view.backgroundColor = #colorLiteral(red: 0.7769867573, green: 0.6931459018, blue: 1, alpha: 1)
+            startStopBut.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+            startStopBut.setTitleColor(#colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), for: .normal)
+            addBut.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+            addBut.setTitleColor(#colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), for: .normal)
             
         case 7:
             
             self.view.backgroundColor = #colorLiteral(red: 1, green: 0.7809499445, blue: 0.2804552203, alpha: 1)
+            startStopBut.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+            startStopBut.setTitleColor(#colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), for: .normal)
+            addBut.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+            addBut.setTitleColor(#colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), for: .normal)
             
         case 8:
             
             self.view.backgroundColor = #colorLiteral(red: 1, green: 0.9949270454, blue: 0.5738554714, alpha: 1)
+            startStopBut.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+            startStopBut.setTitleColor(#colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), for: .normal)
+            addBut.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+            addBut.setTitleColor(#colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), for: .normal)
             
         default:
             break
@@ -101,22 +143,27 @@ class addViewController: UIViewController, UITextFieldDelegate {
             
         }else{
             ptCount = oldPtCount + timerhour
+            lvPt = oldLvPt + timerminute
             let studyrireki = ["subject": subjecttextField.text!, "secondtime": String(timersecond), "minutetime": String(timerminute), "hourtime": String(timerhour), "date": String(gettoday())]
             studydataArray.append(studyrireki)
             savedata.set(studydataArray, forKey: "STUDYDATA")
             studyPtSaveData.set(ptCount, forKey: "STUDYPT")
+            lvPtSaveData.set(lvPt, forKey: "STUDYLV")
             let aleat = UIAlertController(title: "保存完了", message: "保存が完了しました", preferredStyle: .alert)
             aleat.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(aleat, animated: true, completion: nil)
+            oldPtCount = ptCount
+            oldLvPt = lvPt
             subjecttextField.text = ""
             timercount = 0
             timerhour = 0
             timersecond = 0
             timerminute = 0
+            ptCount = 0
+            lvPt = 0
             timesecondlabel.text = String(Int(timersecond))
             timeminutelabel.text = String(Int(timerminute))
             timehourlabel.text = String(Int(timerhour))
-            oldPtCount = ptCount
             print(oldPtCount)
             
         }
