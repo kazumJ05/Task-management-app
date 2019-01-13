@@ -155,7 +155,7 @@ class addViewController: UIViewController, UITextFieldDelegate {
             oldPtCount = ptCount
             oldLvPt = lvPt
             subjecttextField.text = ""
-            timercount = 0
+            timercount = 36000
             timerhour = 0
             timersecond = 0
             timerminute = 0

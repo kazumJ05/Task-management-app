@@ -18,8 +18,10 @@ class GachaViewController: UIViewController {
     let colorSaveData = UserDefaults.standard
     let savedata = UserDefaults.standard
     let getCharacterNumber = UserDefaults.standard
+    let nowFlag = UserDefaults.standard
     let characterNameDataArrayBeforeGet: [String] = ["plus", "minus", "division", "kakeru", "equal"]
     let characterImageDataArrayBeforeGet: [String] = ["plus.png", "minus.png", "waru.png", "kakeru.png", "equal.png"]
+    var characterFlag: [Bool] = [false, false, false, false, false]
     
     
     var colornumber: Int = 1
@@ -46,13 +48,16 @@ class GachaViewController: UIViewController {
             
             studyPt = studyPt - 10
             studyPtSaveData.set(studyPt, forKey: "STUDYPT")
-            getCharacterDataArrayNumber = Int(arc4random_uniform(5))
             
-            //            for _ in 1...5{
-//        }
-            
-            
-            performSegue(withIdentifier: "toResultView", sender: nil)
+            while true{
+                getCharacterDataArrayNumber = Int(arc4random_uniform(5))
+                if characterFlag[getCharacterDataArrayNumber] == false{
+                    characterFlag[getCharacterDataArrayNumber] = true
+                    performSegue(withIdentifier: "toResultView", sender: nil)
+                    nowFlag.set(characterFlag, forKey: "nowFlag")
+                    break
+                }
+            }
         }
     }
     
@@ -81,6 +86,10 @@ class GachaViewController: UIViewController {
             nowPtLabel.text = String(studyPt)
             
             print(studyPt)
+        }
+        
+        if nowFlag.array(forKey: "nowFlag") != nil{
+            characterFlag = nowFlag.array(forKey: "nowFlag") as! [Bool]
         }
         
         
