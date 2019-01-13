@@ -10,7 +10,7 @@ import UIKit
 
 class addViewController: UIViewController, UITextFieldDelegate {
     
-    var timercount: Int = 36000
+    var timercount: Int = 4200
     var timerhour: Int = 0
     var timerminute: Int = 0
     var timersecond: Int = 0
@@ -18,19 +18,26 @@ class addViewController: UIViewController, UITextFieldDelegate {
     var oldPtCount: Int = 0
     var lvPt: Int = 0
     var oldLvPt: Int = 0
+    var Lv: Int = 0
+    var oldLv: Int = 0
+    var setLv : Int = 0
     var studydataArray: [Dictionary<String, String>] = []
+    var characterDataArray: [Dictionary<String, String>] = []
     var timer: Timer = Timer()
     var colornumber: Int = 1
+    var selectedCell: Int? = nil
     
     let savedata = UserDefaults.standard
     let colorSaveData = UserDefaults.standard
     let studyPtSaveData = UserDefaults.standard
     let lvPtSaveData = UserDefaults.standard
+    let setCharctCellData = UserDefaults.standard
+    let characterNameSaveData = UserDefaults.standard
     
     @IBOutlet var timesecondlabel: UILabel!
     @IBOutlet var timehourlabel: UILabel!
     @IBOutlet var timeminutelabel: UILabel!
-    @IBOutlet var subjecttextField: UITextField!
+    @IBOutlet weak var subjecttextField: UITextField!
     @IBOutlet var startStopBut: UIButton!
     @IBOutlet var addBut: UIButton!
 
@@ -39,6 +46,8 @@ class addViewController: UIViewController, UITextFieldDelegate {
         if savedata.array(forKey: "STUDYDATA") != nil{
             studydataArray = savedata.array(forKey: "STUDYDATA") as! [Dictionary<String, String>]
         }
+        
+        subjecttextField.delegate = self
         
         timesecondlabel.textAlignment = NSTextAlignment.right
         timehourlabel.textAlignment = NSTextAlignment.right
@@ -57,6 +66,18 @@ class addViewController: UIViewController, UITextFieldDelegate {
             oldPtCount = studyPtSaveData.object(forKey: "STUDYPT") as! Int
         }
         
+        if characterNameSaveData.array(forKey: "CHARACTERNAME") != nil{
+            characterDataArray = characterNameSaveData.array(forKey: "CHARACTERNAME") as! [Dictionary<String, String>]
+        }
+        
+        if setCharctCellData.object(forKey: "SETCELLCHA") != nil{
+            selectedCell = setCharctCellData.object(forKey: "SETCELLCHA") as! Int
+            oldLv = Int(characterDataArray[selectedCell!]["Lv"]!)!
+        }
+        
+        if lvPtSaveData.object(forKey: "LvPt") != nil{
+            oldLvPt = lvPtSaveData.object(forKey: "LvPt") as! Int
+        }
         print(colornumber)
         
         switch colornumber {
@@ -148,14 +169,27 @@ class addViewController: UIViewController, UITextFieldDelegate {
             studydataArray.append(studyrireki)
             savedata.set(studydataArray, forKey: "STUDYDATA")
             studyPtSaveData.set(ptCount, forKey: "STUDYPT")
-            lvPtSaveData.set(lvPt, forKey: "STUDYLV")
+            lvPtSaveData.set(lvPt, forKey: "LvPt")
+            Lv = lvPt / 100
+            setLv = Lv + oldLv
+            
+            if lvPt >= 100{
+                lvPt = lvPt - 100
+                oldLvPt = oldLvPt - 100
+            }
+            
+            if selectedCell != nil{
+                characterDataArray[selectedCell!]["Lv"] = String(setLv)
+                characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
+            }
+            
             let aleat = UIAlertController(title: "保存完了", message: "保存が完了しました", preferredStyle: .alert)
             aleat.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(aleat, animated: true, completion: nil)
             oldPtCount = ptCount
             oldLvPt = lvPt
             subjecttextField.text = ""
-            timercount = 36000
+            timercount = 4200
             timerhour = 0
             timersecond = 0
             timerminute = 0

@@ -37,7 +37,7 @@ class ViewController: UIViewController, UITableViewDataSource{
         
         table.rowHeight = 90
         oldPtLabel.textAlignment = NSTextAlignment.right
-        lvlabel.textAlignment = NSTextAlignment.right
+        lvlabel.textAlignment = NSTextAlignment.left
         namelabel.textAlignment = NSTextAlignment.right
         
     }
@@ -70,17 +70,12 @@ class ViewController: UIViewController, UITableViewDataSource{
         }
         
         if setCharctCellData.object(forKey: "SETCELLCHA") != nil{
-            
             selectedCell = setCharctCellData.object(forKey: "SETCELLCHA") as! Int
-            
             if selectedCell != nil{
-                
-//                lvlabel.text = String(characterDataArray[selectedCell!]["characterLv"]!)
-                characterImageView.image = UIImage(named: characterImageArray[selectedCell!]["characterImage"]! )
+                characterImageView.image = UIImage(named: characterImageArray[selectedCell!]["characterImage"]!)
                 namelabel.text = String(characterDataArray[selectedCell!]["characterName"]!)
-                
+                lvlabel.text = String(characterDataArray[selectedCell!]["Lv"]!)
             }
-            
         }
        
         

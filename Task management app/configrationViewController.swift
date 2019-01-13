@@ -178,6 +178,8 @@ class configrationViewController: UIViewController, UITableViewDataSource, UITab
         
         cell.nameLabel.text = nowIndexPathDictionary["characterName"]
         cell.characterImageView.image = UIImage(named: nowCharIndexPathDictionary["characterImage"]!)
+        cell.LvLabel.text = nowIndexPathDictionary["Lv"]
+        
         
         return cell
     }

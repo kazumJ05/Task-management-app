@@ -11,6 +11,7 @@ import UIKit
 class ResultViewController: UIViewController {
     
     var colorNumber: Int = 0
+    var lvPt: Int = 0
     var getCharacterDataArrayNumber: Int!
     var characterDataArray : [Dictionary<String, String>] = []
     var characterImageArray : [Dictionary<String, String>] = []
@@ -70,7 +71,7 @@ class ResultViewController: UIViewController {
             characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[0])
             characterNameLabel.text = characterNameDataArrayBeforeGet[0]
 
-            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[0]]
+            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[0], "Lv": String(lvPt)]
             characterDataArray.append(getCharacter)
             characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
             
@@ -83,7 +84,7 @@ class ResultViewController: UIViewController {
             characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[1])
             characterNameLabel.text = characterNameDataArrayBeforeGet[1]
             
-            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[1]]
+            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[1], "Lv": String(lvPt)]
             characterDataArray.append(getCharacter)
             characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
 
@@ -96,7 +97,7 @@ class ResultViewController: UIViewController {
             characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[2])
             characterNameLabel.text = characterNameDataArrayBeforeGet[2]
     
-            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[2]]
+            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[2], "Lv": String(lvPt)]
             characterDataArray.append(getCharacter)
             characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
 
@@ -110,7 +111,7 @@ class ResultViewController: UIViewController {
             characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[3])
             characterNameLabel.text = characterNameDataArrayBeforeGet[3]
         
-            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[3]]
+            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[3], "Lv": String(lvPt)]
             characterDataArray.append(getCharacter)
             characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
 
@@ -124,7 +125,7 @@ class ResultViewController: UIViewController {
             characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[4])
             characterNameLabel.text = characterNameDataArrayBeforeGet[4]
 
-            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[4]]
+            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[4], "Lv": String(lvPt)]
             characterDataArray.append(getCharacter)
             characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
 
@@ -137,7 +138,7 @@ class ResultViewController: UIViewController {
             characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[5])
             characterNameLabel.text = characterNameDataArrayBeforeGet[5]
             
-            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[5]]
+            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[5], "Lv": String(lvPt)]
             characterDataArray.append(getCharacter)
             characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
             
