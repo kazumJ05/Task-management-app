@@ -65,92 +65,16 @@ class ResultViewController: UIViewController {
             characterImageArray = characterImageSaveData.array(forKey: "CHARACTERIMAGE") as! [Dictionary<String, String>]
         }
         
-        switch getCharacterDataArrayNumber {
-        case 0:
-
-            characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[0])
-            characterNameLabel.text = characterNameDataArrayBeforeGet[0]
-
-            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[0], "Lv": String(lvPt)]
-            characterDataArray.append(getCharacter)
-            characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
-            
-            let getCharacterImage = ["characterImage": characterImageDataArrayBeforeGet[0]]
-            characterImageArray.append(getCharacterImage)
-            characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
-
-        case 1:
-
-            characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[1])
-            characterNameLabel.text = characterNameDataArrayBeforeGet[1]
-            
-            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[1], "Lv": String(lvPt)]
-            characterDataArray.append(getCharacter)
-            characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
-
-            let getCharacterImage = ["characterImage": characterImageDataArrayBeforeGet[1]]
-            characterImageArray.append(getCharacterImage)
-            characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
-
-        case 2:
-
-            characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[2])
-            characterNameLabel.text = characterNameDataArrayBeforeGet[2]
-    
-            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[2], "Lv": String(lvPt)]
-            characterDataArray.append(getCharacter)
-            characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
-
-            let getCharacterImage = ["characterImage": characterImageDataArrayBeforeGet[2]]
-            characterImageArray.append(getCharacterImage)
-            characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
-
-
-        case 3:
-
-            characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[3])
-            characterNameLabel.text = characterNameDataArrayBeforeGet[3]
+        characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[getCharacterDataArrayNumber])
+        characterNameLabel.text = characterNameDataArrayBeforeGet[getCharacterDataArrayNumber]
         
-            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[3], "Lv": String(lvPt)]
-            characterDataArray.append(getCharacter)
-            characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
-
-            let getCharacterImage = ["characterImage": characterImageDataArrayBeforeGet[3]]
-            characterImageArray.append(getCharacterImage)
-            characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
-
-
-        case 4:
-
-            characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[4])
-            characterNameLabel.text = characterNameDataArrayBeforeGet[4]
-
-            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[4], "Lv": String(lvPt)]
-            characterDataArray.append(getCharacter)
-            characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
-
-            let getCharacterImage = ["characterImage": characterImageDataArrayBeforeGet[4]]
-            characterImageArray.append(getCharacterImage)
-            characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
-            
-        case 5:
-            
-            characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[5])
-            characterNameLabel.text = characterNameDataArrayBeforeGet[5]
-            
-            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[5], "Lv": String(lvPt)]
-            characterDataArray.append(getCharacter)
-            characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
-            
-            let getCharacterImage = ["characterImage": characterImageDataArrayBeforeGet[5]]
-            characterImageArray.append(getCharacterImage)
-            characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
-            
-        default:
-            break
-        }
+        let getCharacter = ["characterName": characterNameDataArrayBeforeGet[getCharacterDataArrayNumber], "Lv": String(lvPt)]
+        characterDataArray.append(getCharacter)
+        characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
         
-        
+        let getCharacterImage = ["characterImage": characterImageDataArrayBeforeGet[getCharacterDataArrayNumber]]
+        characterImageArray.append(getCharacterImage)
+        characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
         
         switch colorNumber {
             

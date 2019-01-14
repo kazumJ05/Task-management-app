@@ -10,7 +10,7 @@ import UIKit
 
 class addViewController: UIViewController, UITextFieldDelegate {
     
-    var timercount: Int = 4200
+    var timercount: Int = 36000
     var timerhour: Int = 0
     var timerminute: Int = 0
     var timersecond: Int = 0
@@ -189,7 +189,7 @@ class addViewController: UIViewController, UITextFieldDelegate {
             oldPtCount = ptCount
             oldLvPt = lvPt
             subjecttextField.text = ""
-            timercount = 4200
+            timercount = 36000
             timerhour = 0
             timersecond = 0
             timerminute = 0
