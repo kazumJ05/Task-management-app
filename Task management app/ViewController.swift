@@ -30,6 +30,8 @@ class ViewController: UIViewController, UITableViewDataSource{
     @IBOutlet var namelabel: UILabel!
     @IBOutlet var oldPtLabel: UILabel!
     @IBOutlet var skilLvLabel: UILabel!
+    @IBOutlet var view1: UIView!
+    @IBOutlet var view2: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,9 +39,6 @@ class ViewController: UIViewController, UITableViewDataSource{
          table.register(UINib(nibName: "ListTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
         
         table.rowHeight = 90
-        oldPtLabel.textAlignment = NSTextAlignment.right
-        lvlabel.textAlignment = NSTextAlignment.left
-        namelabel.textAlignment = NSTextAlignment.right
         
     }
     
@@ -85,39 +84,37 @@ class ViewController: UIViewController, UITableViewDataSource{
         switch colornumber {
             
         case 1:
-            
             self.view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-            
+            self.view1.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            self.view2.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         case 2:
-            
             self.view.backgroundColor = #colorLiteral(red: 0.7074827594, green: 0.9915311623, blue: 1, alpha: 1)
-            
+            self.view1.backgroundColor = #colorLiteral(red: 0.7074827594, green: 0.9915311623, blue: 1, alpha: 1)
+            self.view2.backgroundColor = #colorLiteral(red: 0.7074827594, green: 0.9915311623, blue: 1, alpha: 1)
         case 3:
-            
             self.view.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
-            
+            self.view1.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+            self.view2.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
         case 4:
-            
             self.view.backgroundColor = #colorLiteral(red: 1, green: 0.7012115478, blue: 0.9455770609, alpha: 1)
-            
-            
+            self.view1.backgroundColor = #colorLiteral(red: 1, green: 0.7012115478, blue: 0.9455770609, alpha: 1)
+            self.view2.backgroundColor = #colorLiteral(red: 1, green: 0.7012115478, blue: 0.9455770609, alpha: 1)
         case 5:
-            
             self.view.backgroundColor = #colorLiteral(red: 0.9044649638, green: 0.920255829, blue: 0.02642256488, alpha: 1)
-            
-            
+            self.view1.backgroundColor = #colorLiteral(red: 0.9044649638, green: 0.920255829, blue: 0.02642256488, alpha: 1)
+            self.view2.backgroundColor = #colorLiteral(red: 0.9044649638, green: 0.920255829, blue: 0.02642256488, alpha: 1)
         case 6:
-            
             self.view.backgroundColor = #colorLiteral(red: 0.7769867573, green: 0.6931459018, blue: 1, alpha: 1)
-            
+            self.view1.backgroundColor = #colorLiteral(red: 0.7769867573, green: 0.6931459018, blue: 1, alpha: 1)
+            self.view2.backgroundColor = #colorLiteral(red: 0.7769867573, green: 0.6931459018, blue: 1, alpha: 1)
         case 7:
-            
             self.view.backgroundColor = #colorLiteral(red: 1, green: 0.7809499445, blue: 0.2804552203, alpha: 1)
-            
+            self.view1.backgroundColor = #colorLiteral(red: 1, green: 0.7809499445, blue: 0.2804552203, alpha: 1)
+            self.view2.backgroundColor = #colorLiteral(red: 1, green: 0.7809499445, blue: 0.2804552203, alpha: 1)
         case 8:
-            
             self.view.backgroundColor = #colorLiteral(red: 1, green: 0.9949270454, blue: 0.5738554714, alpha: 1)
-            
+            self.view1.backgroundColor = #colorLiteral(red: 1, green: 0.9949270454, blue: 0.5738554714, alpha: 1)
+            self.view2.backgroundColor = #colorLiteral(red: 1, green: 0.9949270454, blue: 0.5738554714, alpha: 1)
         default:
             break
         }

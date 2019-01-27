@@ -20,10 +20,9 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Zo-kR-I6C">
-                        <rect key="frame" x="0.0" y="0.0" width="98" height="89.5"/>
+                        <rect key="frame" x="-0.5" y="0.0" width="98.5" height="89.5"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="98" id="0fD-eE-Ylf"/>
-                            <constraint firstAttribute="height" constant="89.5" id="yae-TU-1Kv"/>
+                            <constraint firstAttribute="width" secondItem="0Zo-kR-I6C" secondAttribute="height" multiplier="98:89" id="3KB-TN-Rx6"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRx-9T-7sV">
@@ -33,9 +32,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スキルLV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xel-cT-PUY">
-                        <rect key="frame" x="106" y="63" width="72" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スキルLV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xel-cT-PUY">
+                        <rect key="frame" x="105.5" y="63" width="72" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -63,8 +61,12 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="0Zo-kR-I6C" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-111" id="1yz-nY-0ss"/>
-                    <constraint firstItem="0Zo-kR-I6C" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VWt-P6-gAe"/>
+                    <constraint firstItem="0Zo-kR-I6C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="5GM-BZ-lOV"/>
+                    <constraint firstAttribute="bottom" secondItem="0Zo-kR-I6C" secondAttribute="bottom" id="Fpf-Xe-3YN"/>
+                    <constraint firstItem="xel-cT-PUY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="28.75" id="Ozk-Ax-WKr"/>
+                    <constraint firstItem="0Zo-kR-I6C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="-0.5" id="PSQ-dr-jMg"/>
+                    <constraint firstItem="xel-cT-PUY" firstAttribute="leading" secondItem="0Zo-kR-I6C" secondAttribute="trailing" constant="7.5" id="VTV-fg-Rwn"/>
+                    <constraint firstItem="xel-cT-PUY" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-18.5" id="hvO-BI-dN2"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

@@ -24,6 +24,7 @@ class configrationViewController: UIViewController, UITableViewDataSource, UITab
     
     @IBOutlet var characterTable: UITableView!
     @IBOutlet var table: UITableView!
+    @IBOutlet var view5: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,94 +63,79 @@ class configrationViewController: UIViewController, UITableViewDataSource, UITab
         switch colornumber {
             
         case 1:
-            
             self.view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-            
+            self.view5.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         case 2:
-            
             self.view.backgroundColor = #colorLiteral(red: 0.7074827594, green: 0.9915311623, blue: 1, alpha: 1)
-            
+            self.view5.backgroundColor = #colorLiteral(red: 0.7074827594, green: 0.9915311623, blue: 1, alpha: 1)
         case 3:
-            
             self.view.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
-            
+            self.view5.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
         case 4:
-            
             self.view.backgroundColor = #colorLiteral(red: 1, green: 0.7012115478, blue: 0.9455770609, alpha: 1)
-            
+            self.view5.backgroundColor = #colorLiteral(red: 1, green: 0.7012115478, blue: 0.9455770609, alpha: 1)
         case 5:
-            
             self.view.backgroundColor = #colorLiteral(red: 0.9044649638, green: 0.920255829, blue: 0.02642256488, alpha: 1)
-            
+            self.view5.backgroundColor = #colorLiteral(red: 0.9044649638, green: 0.920255829, blue: 0.02642256488, alpha: 1)
         case 6:
-            
             self.view.backgroundColor = #colorLiteral(red: 0.7769867573, green: 0.6931459018, blue: 1, alpha: 1)
-            
+            self.view5.backgroundColor = #colorLiteral(red: 0.7769867573, green: 0.6931459018, blue: 1, alpha: 1)
         case 7:
-            
             self.view.backgroundColor = #colorLiteral(red: 1, green: 0.7809499445, blue: 0.2804552203, alpha: 1)
-            
+            self.view5.backgroundColor = #colorLiteral(red: 1, green: 0.7809499445, blue: 0.2804552203, alpha: 1)
         case 8:
-            
             self.view.backgroundColor = #colorLiteral(red: 1, green: 0.9949270454, blue: 0.5738554714, alpha: 1)
-            
+            self.view5.backgroundColor = #colorLiteral(red: 1, green: 0.9949270454, blue: 0.5738554714, alpha: 1)
         default:
             break
         }
     }
     
     @IBAction func selectcolorwhite(){
-        
         self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        self.view5.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         colornumber = 1
         colorSaveData.set(colornumber, forKey: "COLOR")
     }
-    
     @IBAction func selectcolorblue(){
-        
         self.view.backgroundColor = #colorLiteral(red: 0.7074827594, green: 0.9915311623, blue: 1, alpha: 1)
+        self.view5.backgroundColor = #colorLiteral(red: 0.7074827594, green: 0.9915311623, blue: 1, alpha: 1)
         colornumber = 2
         colorSaveData.set(colornumber, forKey: "COLOR")
     }
-    
     @IBAction func selectcolorgreen(){
-        
         self.view.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+        self.view5.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
         colornumber = 3
         colorSaveData.set(colornumber, forKey: "COLOR")
     }
-    
     @IBAction func selectcolorpink(){
-        
         self.view.backgroundColor = #colorLiteral(red: 1, green: 0.7012115478, blue: 0.9455770609, alpha: 1)
+        self.view5.backgroundColor = #colorLiteral(red: 1, green: 0.7012115478, blue: 0.9455770609, alpha: 1)
         colornumber = 4
         colorSaveData.set(colornumber, forKey: "COLOR")
     }
-    
     @IBAction func selectcoloryellow(){
-        
         self.view.backgroundColor = #colorLiteral(red: 0.9044649638, green: 0.920255829, blue: 0.02642256488, alpha: 1)
+        self.view5.backgroundColor = #colorLiteral(red: 0.9044649638, green: 0.920255829, blue: 0.02642256488, alpha: 1)
         colornumber = 5
         colorSaveData.set(colornumber, forKey: "COLOR")
     }
-    
     @IBAction func selectcolorpurple(){
-        
         self.view.backgroundColor = #colorLiteral(red: 0.7769867573, green: 0.6931459018, blue: 1, alpha: 1)
+        self.view5.backgroundColor = #colorLiteral(red: 0.7769867573, green: 0.6931459018, blue: 1, alpha: 1)
         colornumber = 6
         colorSaveData.set(colornumber, forKey: "COLOR")
     }
-    
     @IBAction func selectcolororange(){
-        
         self.view.backgroundColor = #colorLiteral(red: 1, green: 0.7809499445, blue: 0.2804552203, alpha: 1)
+        self.view5.backgroundColor = #colorLiteral(red: 1, green: 0.7809499445, blue: 0.2804552203, alpha: 1)
         colornumber = 7
         colorSaveData.set(colornumber, forKey: "COLOR")
     }
-    
     @IBAction func selectcolorcream(){
-        
         self.view.backgroundColor = #colorLiteral(red: 1, green: 0.9949270454, blue: 0.5738554714, alpha: 1)
+        self.view5.backgroundColor = #colorLiteral(red: 1, green: 0.9949270454, blue: 0.5738554714, alpha: 1)
         colornumber = 8
         colorSaveData.set(colornumber, forKey: "COLOR")
     }

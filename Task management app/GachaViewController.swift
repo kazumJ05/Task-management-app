@@ -65,30 +65,30 @@ class GachaViewController: UIViewController {
                     performSegue(withIdentifier: "toResultView", sender: nil)
                     nowFlag.set(characterFlag, forKey: "nowFlag")
                     break
-                }else if characterFlag1[getCharacterDataArrayNumber] == false{
-                    characterFlag1[getCharacterDataArrayNumber] = true
-                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 10
-                    performSegue(withIdentifier: "toResultView", sender: nil)
-                    nowFlag1.set(characterFlag1, forKey: "nowFlag1")
-                    break
-                }else if characterFlag2[getCharacterDataArrayNumber] == false{
-                    characterFlag2[getCharacterDataArrayNumber] = true
-                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 20
-                    performSegue(withIdentifier: "toResultView", sender: nil)
-                    nowFlag2.set(characterFlag2, forKey: "nowFlag2")
-                    break
-                }else if characterFlag3[getCharacterDataArrayNumber] == false{
-                    characterFlag3[getCharacterDataArrayNumber] = true
-                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 30
-                    performSegue(withIdentifier: "toResultView", sender: nil)
-                    nowFlag3.set(characterFlag3, forKey: "nowFlag3")
-                    break
-                }else if characterFlag4[getCharacterDataArrayNumber] == false{
-                    characterFlag4[getCharacterDataArrayNumber] = true
-                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 40
-                    performSegue(withIdentifier: "toResultView", sender: nil)
-                    nowFlag4.set(characterFlag4, forKey: "nowFlag4")
-                    break
+//                }else if characterFlag1[getCharacterDataArrayNumber] == false{
+//                    characterFlag1[getCharacterDataArrayNumber] = true
+//                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 10
+//                    performSegue(withIdentifier: "toResultView", sender: nil)
+//                    nowFlag1.set(characterFlag1, forKey: "nowFlag1")
+//                    break
+//                }else if characterFlag2[getCharacterDataArrayNumber] == false{
+//                    characterFlag2[getCharacterDataArrayNumber] = true
+//                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 20
+//                    performSegue(withIdentifier: "toResultView", sender: nil)
+//                    nowFlag2.set(characterFlag2, forKey: "nowFlag2")
+//                    break
+//                }else if characterFlag3[getCharacterDataArrayNumber] == false{
+//                    characterFlag3[getCharacterDataArrayNumber] = true
+//                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 30
+//                    performSegue(withIdentifier: "toResultView", sender: nil)
+//                    nowFlag3.set(characterFlag3, forKey: "nowFlag3")
+//                    break
+//                }else if characterFlag4[getCharacterDataArrayNumber] == false{
+//                    characterFlag4[getCharacterDataArrayNumber] = true
+//                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 40
+//                    performSegue(withIdentifier: "toResultView", sender: nil)
+//                    nowFlag4.set(characterFlag4, forKey: "nowFlag4")
+//                    break
                 }else{
                 }
             }
