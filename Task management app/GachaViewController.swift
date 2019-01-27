@@ -19,9 +19,18 @@ class GachaViewController: UIViewController {
     let savedata = UserDefaults.standard
     let getCharacterNumber = UserDefaults.standard
     let nowFlag = UserDefaults.standard
+    let nowFlag1 = UserDefaults.standard
+    let nowFlag2 = UserDefaults.standard
+    let nowFlag3 = UserDefaults.standard
+    let nowFlag4 = UserDefaults.standard
     let characterNameDataArrayBeforeGet: [String] = ["plus", "minus", "division", "kakeru", "equal"]
-    let characterImageDataArrayBeforeGet: [String] = ["plus.png", "minus.png", "waru.png", "kakeru.png", "equal.png"]
+    let characterImageDataArrayBeforeGet: [String] = ["plus.png", "minus.png", "waru.png", "kakeru.png", "equal.png" , "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19","20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39"]
     var characterFlag: [Bool] = [false, false, false, false, false]
+    var characterFlag1: [Bool] = [false, false, false, false, false]
+    var characterFlag2: [Bool] = [false,false, false, false, false]
+    var characterFlag3: [Bool] = [false, false, false, false, false]
+    var characterFlag4 : [Bool] = [false, false, false, false, false]
+    
     
     
     var colornumber: Int = 1
@@ -56,6 +65,31 @@ class GachaViewController: UIViewController {
                     performSegue(withIdentifier: "toResultView", sender: nil)
                     nowFlag.set(characterFlag, forKey: "nowFlag")
                     break
+                }else if characterFlag1[getCharacterDataArrayNumber] == false{
+                    characterFlag1[getCharacterDataArrayNumber] = true
+                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 10
+                    performSegue(withIdentifier: "toResultView", sender: nil)
+                    nowFlag1.set(characterFlag1, forKey: "nowFlag1")
+                    break
+                }else if characterFlag2[getCharacterDataArrayNumber] == false{
+                    characterFlag2[getCharacterDataArrayNumber] = true
+                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 20
+                    performSegue(withIdentifier: "toResultView", sender: nil)
+                    nowFlag2.set(characterFlag2, forKey: "nowFlag2")
+                    break
+                }else if characterFlag3[getCharacterDataArrayNumber] == false{
+                    characterFlag3[getCharacterDataArrayNumber] = true
+                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 30
+                    performSegue(withIdentifier: "toResultView", sender: nil)
+                    nowFlag3.set(characterFlag3, forKey: "nowFlag3")
+                    break
+                }else if characterFlag4[getCharacterDataArrayNumber] == false{
+                    characterFlag4[getCharacterDataArrayNumber] = true
+                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 40
+                    performSegue(withIdentifier: "toResultView", sender: nil)
+                    nowFlag4.set(characterFlag4, forKey: "nowFlag4")
+                    break
+                }else{
                 }
             }
         }
@@ -92,6 +126,17 @@ class GachaViewController: UIViewController {
             characterFlag = nowFlag.array(forKey: "nowFlag") as! [Bool]
         }
         
+        if nowFlag2.array(forKey: "nowFlag2") != nil{
+            characterFlag2 = nowFlag2.array(forKey: "nowFlag2") as! [Bool]
+        }
+        
+        if nowFlag3.array(forKey: "nowFlag3") != nil{
+            characterFlag3 = nowFlag3.array(forKey: "nowFlag3") as! [Bool]
+        }
+        
+        if nowFlag4.array(forKey: "nowFlag4") != nil{
+            characterFlag4 = nowFlag4.array(forKey: "nowFlag4") as! [Bool]
+        }
         
         
         switch colornumber {

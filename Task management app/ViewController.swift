@@ -29,6 +29,7 @@ class ViewController: UIViewController, UITableViewDataSource{
     @IBOutlet var characterImageView: UIImageView!
     @IBOutlet var namelabel: UILabel!
     @IBOutlet var oldPtLabel: UILabel!
+    @IBOutlet var skilLvLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,10 +76,10 @@ class ViewController: UIViewController, UITableViewDataSource{
                 characterImageView.image = UIImage(named: characterImageArray[selectedCell!]["characterImage"]!)
                 namelabel.text = String(characterDataArray[selectedCell!]["characterName"]!)
                 lvlabel.text = String(characterDataArray[selectedCell!]["Lv"]!)
+                skilLvLabel.text = String(characterDataArray[selectedCell!]["skilLv"]!)
             }
         }
        
-        
         print(colornumber)
         
         switch colornumber {

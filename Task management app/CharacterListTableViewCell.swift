@@ -13,6 +13,7 @@ class CharacterListTableViewCell: UITableViewCell {
     @IBOutlet var characterImageView: UIImageView!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var LvLabel: UILabel!
+    @IBOutlet var skilLvLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
