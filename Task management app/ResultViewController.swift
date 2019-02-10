@@ -36,8 +36,8 @@ class ResultViewController: UIViewController {
     let nowFlag2 = UserDefaults.standard
     let nowFlag3 = UserDefaults.standard
     let nowFlag4 = UserDefaults.standard
-    let characterNameDataArrayBeforeGet: [String] = ["plus", "minus", "division", "kakeru", "equal"]
-    let characterImageDataArrayBeforeGet: [String] = ["plus.png", "minus.png", "waru.png", "kakeru.jpg", "equal.png"]
+    let characterNameDataArrayBeforeGet: [String] = ["bird", "minus", "division", "kakeru", "equal"]
+    let characterImageDataArrayBeforeGet: [String] = ["bird_cut.png", "minus.png", "waru.png", "kakeru.jpg", "equal.png"]
     
 
     override func viewDidLoad() {
@@ -87,8 +87,7 @@ class ResultViewController: UIViewController {
         }else if getCharacterDataArrayNumber >= 10 && getCharacterDataArrayNumber <= 19{
             
             characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[getCharacterDataArrayNumber])
-            characterNameLabel.text = "スキルLv　UP!"
-            nameLabel.isHidden = true
+            characterNameLabel.text = characterNameDataArrayBeforeGet[getCharacterDataArrayNumber]
             skilLv = skilLv + 1
             
             for index in 0..<IDArray.count {
@@ -106,7 +105,7 @@ class ResultViewController: UIViewController {
         }else if getCharacterDataArrayNumber >= 20 && getCharacterDataArrayNumber <= 29{
             
             characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[getCharacterDataArrayNumber])
-            characterNameLabel.text = "スキルLv　UP!"
+            characterNameLabel.text = characterNameDataArrayBeforeGet[getCharacterDataArrayNumber]
             nameLabel.isHidden = true
             skilLv = skilLv + 2
             
@@ -125,8 +124,7 @@ class ResultViewController: UIViewController {
         }else if getCharacterDataArrayNumber >= 30 && getCharacterDataArrayNumber <= 39{
             
             characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[getCharacterDataArrayNumber])
-            characterNameLabel.text = "スキルLv　UP!"
-            nameLabel.isHidden = true
+            characterNameLabel.text = characterNameDataArrayBeforeGet[getCharacterDataArrayNumber]
             skilLv = skilLv + 3
             
             for index in 0..<IDArray.count {
@@ -144,8 +142,7 @@ class ResultViewController: UIViewController {
         }else if getCharacterDataArrayNumber >= 40 && getCharacterDataArrayNumber <= 49{
             
             characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[getCharacterDataArrayNumber])
-            characterNameLabel.text = "スキルLv　UP!"
-            nameLabel.isHidden = true
+            characterNameLabel.text = characterNameDataArrayBeforeGet[getCharacterDataArrayNumber]
             skilLv = skilLv + 4
             
             for index in 0..<IDArray.count {
