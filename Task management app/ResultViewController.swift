@@ -36,8 +36,8 @@ class ResultViewController: UIViewController {
     let nowFlag2 = UserDefaults.standard
     let nowFlag3 = UserDefaults.standard
     let nowFlag4 = UserDefaults.standard
-    let characterNameDataArrayBeforeGet: [String] = ["bird", "minus", "division", "kakeru", "equal"]
-    let characterImageDataArrayBeforeGet: [String] = ["bird_cut.png", "minus.png", "waru.png", "kakeru.jpg", "equal.png"]
+    let characterNameDataArrayBeforeGet: [String] = ["bird", "cat", "dog", "flog", "hituzi", "kappa", "kingpengwin", "panda", "pig", "zou"]
+    let characterImageDataArrayBeforeGet: [String] = ["bird_cut.png", "cat_cut.png", "dog_cut.png", "flog_cut.jpg", "hituzi_cut.png", "hituzi_cut.png", "kappa_cut.png", "kingpengwin_cut.png", "panda_cut.png", "pig_cut.png", "zou_cut.png"]
     
 
     override func viewDidLoad() {
@@ -68,7 +68,7 @@ class ResultViewController: UIViewController {
         if IDSaveData.array(forKey: "ID") != nil{
             IDArray = IDSaveData.array(forKey: "ID") as! [Int]
         }
-        if getCharacterDataArrayNumber >= 0 && getCharacterDataArrayNumber <= 9 {
+        if getCharacterDataArrayNumber >= 0 && getCharacterDataArrayNumber <= 5 {
             
             characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[getCharacterDataArrayNumber])
             characterNameLabel.text = characterNameDataArrayBeforeGet[getCharacterDataArrayNumber]
@@ -84,80 +84,122 @@ class ResultViewController: UIViewController {
             IDArray.append(getCharacterDataArrayNumber)
             IDSaveData.set(IDArray, forKey: "ID")
             
-        }else if getCharacterDataArrayNumber >= 10 && getCharacterDataArrayNumber <= 19{
-            
+        }else if getCharacterDataArrayNumber >= 10 && getCharacterDataArrayNumber <= 15{
+
             characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[getCharacterDataArrayNumber])
             characterNameLabel.text = characterNameDataArrayBeforeGet[getCharacterDataArrayNumber]
-            skilLv = skilLv + 1
+//            skilLv = skilLv + 1
             
-            for index in 0..<IDArray.count {
-                if IDArray[index] == getCharacterDataArrayNumber {
-                    let upDateLv = ["characterName": characterNameDataArrayBeforeGet[getCharacterDataArrayNumber - 10], "Lv": String(lvPt), "skilLv": String(skilLv)]
-                    let upDateImage = ["characterImage": characterImageDataArrayBeforeGet[getCharacterDataArrayNumber]]
-                    characterDataArray[index] = upDateLv//あたらしいもの
-                    characterImageArray[index] = upDateImage
-                    characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
-                    characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
-                    break
-                }
-            }
+            let getCharacter = ["characterName": characterNameDataArrayBeforeGet[getCharacterDataArrayNumber], "Lv": String(lvPt), "skilLv": String(skilLv)]
+            characterDataArray.append(getCharacter)
+            characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
             
-        }else if getCharacterDataArrayNumber >= 20 && getCharacterDataArrayNumber <= 29{
+            let getCharacterImage = ["characterImage": characterImageDataArrayBeforeGet[getCharacterDataArrayNumber]]
+            characterImageArray.append(getCharacterImage)
+            characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
             
-            characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[getCharacterDataArrayNumber])
-            characterNameLabel.text = characterNameDataArrayBeforeGet[getCharacterDataArrayNumber]
-            nameLabel.isHidden = true
-            skilLv = skilLv + 2
-            
-            for index in 0..<IDArray.count {
-                if IDArray[index] == getCharacterDataArrayNumber {
-                    let upDateLv = ["characterName": characterNameDataArrayBeforeGet[getCharacterDataArrayNumber - 10], "Lv": String(lvPt), "skilLv": String(skilLv)]
-                    let upDateImage = ["characterImage": characterImageDataArrayBeforeGet[getCharacterDataArrayNumber]]
-                    characterDataArray[index] = upDateLv//あたらしいもの
-                    characterImageArray[index] = upDateImage
-                    characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
-                    characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
-                    break
-                }
-            }
-            
-        }else if getCharacterDataArrayNumber >= 30 && getCharacterDataArrayNumber <= 39{
-            
-            characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[getCharacterDataArrayNumber])
-            characterNameLabel.text = characterNameDataArrayBeforeGet[getCharacterDataArrayNumber]
-            skilLv = skilLv + 3
-            
-            for index in 0..<IDArray.count {
-                if IDArray[index] == getCharacterDataArrayNumber {
-                    let upDateLv = ["characterName": characterNameDataArrayBeforeGet[getCharacterDataArrayNumber - 10], "Lv": String(lvPt), "skilLv": String(skilLv)]
-                    let upDateImage = ["characterImage": characterImageDataArrayBeforeGet[getCharacterDataArrayNumber]]
-                    characterDataArray[index] = upDateLv//あたらしいもの
-                    characterImageArray[index] = upDateImage
-                    characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
-                    characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
-                    break
-                }
-            }
-            
-        }else if getCharacterDataArrayNumber >= 40 && getCharacterDataArrayNumber <= 49{
-            
-            characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[getCharacterDataArrayNumber])
-            characterNameLabel.text = characterNameDataArrayBeforeGet[getCharacterDataArrayNumber]
-            skilLv = skilLv + 4
-            
-            for index in 0..<IDArray.count {
-                if IDArray[index] == getCharacterDataArrayNumber {
-                    let upDateLv = ["characterName": characterNameDataArrayBeforeGet[getCharacterDataArrayNumber - 10], "Lv": String(lvPt), "skilLv": String(skilLv)]
-                    let upDateImage = ["characterImage": characterImageDataArrayBeforeGet[getCharacterDataArrayNumber]]
-                    characterDataArray[index] = upDateLv//あたらしいもの
-                    characterImageArray[index] = upDateImage
-                    characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
-                    characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
-                    break
-                }
-            }
-            
-        }
+            IDArray.append(getCharacterDataArrayNumber)
+            IDSaveData.set(IDArray, forKey: "ID")
+
+//            for index in 0..<IDArray.count {
+//                if IDArray[index] == getCharacterDataArrayNumber {
+//                    let upDateLv = ["characterName": characterNameDataArrayBeforeGet[getCharacterDataArrayNumber - 10], "Lv": String(lvPt), "skilLv": String(skilLv)]
+//                    let upDateImage = ["characterImage": characterImageDataArrayBeforeGet[getCharacterDataArrayNumber]]
+//                    characterDataArray[index] = upDateLv//あたらしいもの
+//                    characterImageArray[index] = upDateImage
+//                    characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
+//                    characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
+//                    break
+//                }
+//            }
+        }//else if getCharacterDataArrayNumber >= 20 && getCharacterDataArrayNumber <= 25{
+        
+//            characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[getCharacterDataArrayNumber])
+//            characterNameLabel.text = characterNameDataArrayBeforeGet[getCharacterDataArrayNumber]
+//            nameLabel.isHidden = true
+////            skilLv = skilLv + 2
+        
+//        let getCharacter = ["characterName": characterNameDataArrayBeforeGet[getCharacterDataArrayNumber], "Lv": String(lvPt), "skilLv": String(skilLv)]
+//        characterDataArray.append(getCharacter)
+//        characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
+//        
+//        let getCharacterImage = ["characterImage": characterImageDataArrayBeforeGet[getCharacterDataArrayNumber]]
+//        characterImageArray.append(getCharacterImage)
+//        characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
+//        
+//        IDArray.append(getCharacterDataArrayNumber)
+//        IDSaveData.set(IDArray, forKey: "ID")
+//
+////            for index in 0..<IDArray.count {
+////                if IDArray[index] == getCharacterDataArrayNumber {
+////                    let upDateLv = ["characterName": characterNameDataArrayBeforeGet[getCharacterDataArrayNumber - 10], "Lv": String(lvPt), "skilLv": String(skilLv)]
+////                    let upDateImage = ["characterImage": characterImageDataArrayBeforeGet[getCharacterDataArrayNumber]]
+////                    characterDataArray[index] = upDateLv//あたらしいもの
+////                    characterImageArray[index] = upDateImage
+////                    characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
+////                    characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
+////                    break
+////                }
+////            }
+//
+//        }else if getCharacterDataArrayNumber >= 30 && getCharacterDataArrayNumber <= 35{
+//
+//            characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[getCharacterDataArrayNumber])
+//            characterNameLabel.text = characterNameDataArrayBeforeGet[getCharacterDataArrayNumber]
+////            skilLv = skilLv + 3
+        
+//        let getCharacter = ["characterName": characterNameDataArrayBeforeGet[getCharacterDataArrayNumber], "Lv": String(lvPt), "skilLv": String(skilLv)]
+//        characterDataArray.append(getCharacter)
+//        characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
+//
+//        let getCharacterImage = ["characterImage": characterImageDataArrayBeforeGet[getCharacterDataArrayNumber]]
+//        characterImageArray.append(getCharacterImage)
+//        characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
+//
+//        IDArray.append(getCharacterDataArrayNumber)
+//        IDSaveData.set(IDArray, forKey: "ID")
+////
+////            for index in 0..<IDArray.count {
+////                if IDArray[index] == getCharacterDataArrayNumber {
+////                    let upDateLv = ["characterName": characterNameDataArrayBeforeGet[getCharacterDataArrayNumber - 10], "Lv": String(lvPt), "skilLv": String(skilLv)]
+////                    let upDateImage = ["characterImage": characterImageDataArrayBeforeGet[getCharacterDataArrayNumber]]
+////                    characterDataArray[index] = upDateLv//あたらしいもの
+////                    characterImageArray[index] = upDateImage
+////                    characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
+////                    characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
+////                    break
+////                }
+////            }
+//
+//        }else if getCharacterDataArrayNumber >= 40 && getCharacterDataArrayNumber <= 45{
+//
+//            characterImageView.image = UIImage(named:characterImageDataArrayBeforeGet[getCharacterDataArrayNumber])
+//            characterNameLabel.text = characterNameDataArrayBeforeGet[getCharacterDataArrayNumber]
+////            skilLv = skilLv + 4
+//
+//        let getCharacter = ["characterName": characterNameDataArrayBeforeGet[getCharacterDataArrayNumber], "Lv": String(lvPt), "skilLv": String(skilLv)]
+//        characterDataArray.append(getCharacter)
+//        characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
+//
+//        let getCharacterImage = ["characterImage": characterImageDataArrayBeforeGet[getCharacterDataArrayNumber]]
+//        characterImageArray.append(getCharacterImage)
+//        characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
+//
+//        IDArray.append(getCharacterDataArrayNumber)
+//        IDSaveData.set(IDArray, forKey: "ID")
+////
+////            for index in 0..<IDArray.count {
+////                if IDArray[index] == getCharacterDataArrayNumber {
+////                    let upDateLv = ["characterName": characterNameDataArrayBeforeGet[getCharacterDataArrayNumber - 10], "Lv": String(lvPt), "skilLv": String(skilLv)]
+////                    let upDateImage = ["characterImage": characterImageDataArrayBeforeGet[getCharacterDataArrayNumber]]
+////                    characterDataArray[index] = upDateLv//あたらしいもの
+////                    characterImageArray[index] = upDateImage
+////                    characterNameSaveData.set(characterDataArray, forKey: "CHARACTERNAME")
+////                    characterImageSaveData.set(characterImageArray, forKey: "CHARACTERIMAGE")
+////                    break
+////                }
+////            }
+//        }
         
         switch colorNumber {
         case 1:
