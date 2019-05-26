@@ -28,6 +28,9 @@
 		015BD7D62144EE5D00900AEC /* 家の無料アイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 015BD7D52144EE5D00900AEC /* 家の無料アイコン.png */; };
 		015BD7D82144F03100900AEC /* プラスのアイコン素材.png in Resources */ = {isa = PBXBuildFile; fileRef = 015BD7D72144F03100900AEC /* プラスのアイコン素材.png */; };
 		015BD7DA2144F03B00900AEC /* 宝くじのアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 015BD7D92144F03A00900AEC /* 宝くじのアイコン.png */; };
+		01A6DECE229A266400B71630 /* bird2⁻2.png in Resources */ = {isa = PBXBuildFile; fileRef = 01A6DECB229A266300B71630 /* bird2⁻2.png */; };
+		01A6DECF229A266400B71630 /* rabit.png in Resources */ = {isa = PBXBuildFile; fileRef = 01A6DECC229A266300B71630 /* rabit.png */; };
+		01A6DED0229A266400B71630 /* tanuki.png in Resources */ = {isa = PBXBuildFile; fileRef = 01A6DECD229A266400B71630 /* tanuki.png */; };
 		01AD462621A125AA0041BE47 /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 01AD462521A125AA0041BE47 /* minus.png */; };
 		01AD462821A125B00041BE47 /* equal.png in Resources */ = {isa = PBXBuildFile; fileRef = 01AD462721A125B00041BE47 /* equal.png */; };
 		01AD462A21A125B70041BE47 /* kakeru.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01AD462921A125B70041BE47 /* kakeru.jpg */; };
@@ -83,6 +86,9 @@
 		015BD7D52144EE5D00900AEC /* 家の無料アイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "家の無料アイコン.png"; sourceTree = "<group>"; };
 		015BD7D72144F03100900AEC /* プラスのアイコン素材.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "プラスのアイコン素材.png"; sourceTree = "<group>"; };
 		015BD7D92144F03A00900AEC /* 宝くじのアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宝くじのアイコン.png"; sourceTree = "<group>"; };
+		01A6DECB229A266300B71630 /* bird2⁻2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird2⁻2.png"; sourceTree = "<group>"; };
+		01A6DECC229A266300B71630 /* rabit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rabit.png; sourceTree = "<group>"; };
+		01A6DECD229A266400B71630 /* tanuki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tanuki.png; sourceTree = "<group>"; };
 		01AD462521A125AA0041BE47 /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
 		01AD462721A125B00041BE47 /* equal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = equal.png; sourceTree = "<group>"; };
 		01AD462921A125B70041BE47 /* kakeru.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kakeru.jpg; sourceTree = "<group>"; };
@@ -130,6 +136,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01A6DED1229A31A800B71630 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				010E4E32221004540097F30E /* bird_cut.png */,
+				010E4E34221004540097F30E /* cat_cut.png */,
+				010E4E38221004550097F30E /* dog_cut.png */,
+				010E4E37221004540097F30E /* flog_cut.png */,
+				01A6DECB229A266300B71630 /* bird2⁻2.png */,
+				01A6DECC229A266300B71630 /* rabit.png */,
+				01A6DECD229A266400B71630 /* tanuki.png */,
+				010E4E36221004540097F30E /* hituzi_cut.png */,
+				010E4E39221004550097F30E /* kappa_cut.png */,
+				010E4E30221004540097F30E /* kingpengwin_cut.png */,
+				010E4E35221004540097F30E /* panda_cut.png */,
+				010E4E33221004540097F30E /* pig_cut.png */,
+				010E4E31221004540097F30E /* zou_cut.png */,
+				01AD462521A125AA0041BE47 /* minus.png */,
+				01AD462B21A125C90041BE47 /* plus.png */,
+				01AD462721A125B00041BE47 /* equal.png */,
+				015BD7D92144F03A00900AEC /* 宝くじのアイコン.png */,
+				015BD7D72144F03100900AEC /* プラスのアイコン素材.png */,
+				015BD7D52144EE5D00900AEC /* 家の無料アイコン.png */,
+				015BD7D32144EE0100900AEC /* ギアアイコン (2).png */,
+				01AD462D21A125D70041BE47 /* waru.png */,
+				01AD462921A125B70041BE47 /* kakeru.jpg */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		01DB32E221044F9800EC13D2 = {
 			isa = PBXGroup;
 			children = (
@@ -153,25 +188,7 @@
 		01DB32ED21044F9800EC13D2 /* Task management app */ = {
 			isa = PBXGroup;
 			children = (
-				01AD462921A125B70041BE47 /* kakeru.jpg */,
-				01AD462D21A125D70041BE47 /* waru.png */,
-				010E4E32221004540097F30E /* bird_cut.png */,
-				010E4E34221004540097F30E /* cat_cut.png */,
-				010E4E38221004550097F30E /* dog_cut.png */,
-				010E4E37221004540097F30E /* flog_cut.png */,
-				010E4E36221004540097F30E /* hituzi_cut.png */,
-				010E4E39221004550097F30E /* kappa_cut.png */,
-				010E4E30221004540097F30E /* kingpengwin_cut.png */,
-				010E4E35221004540097F30E /* panda_cut.png */,
-				010E4E33221004540097F30E /* pig_cut.png */,
-				010E4E31221004540097F30E /* zou_cut.png */,
-				01AD462521A125AA0041BE47 /* minus.png */,
-				01AD462B21A125C90041BE47 /* plus.png */,
-				01AD462721A125B00041BE47 /* equal.png */,
-				015BD7D92144F03A00900AEC /* 宝くじのアイコン.png */,
-				015BD7D72144F03100900AEC /* プラスのアイコン素材.png */,
-				015BD7D52144EE5D00900AEC /* 家の無料アイコン.png */,
-				015BD7D32144EE0100900AEC /* ギアアイコン (2).png */,
+				01A6DED1229A31A800B71630 /* image */,
 				01DB32EE21044F9800EC13D2 /* AppDelegate.swift */,
 				01DB32F021044F9800EC13D2 /* ViewController.swift */,
 				01DB32F221044F9800EC13D2 /* Main.storyboard */,
@@ -313,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A6DECF229A266400B71630 /* rabit.png in Resources */,
 				010E4E43221004550097F30E /* kappa_cut.png in Resources */,
 				01DB32F921044FA100EC13D2 /* LaunchScreen.storyboard in Resources */,
 				010E4E3D221004550097F30E /* pig_cut.png in Resources */,
@@ -324,12 +342,14 @@
 				010E4E3C221004550097F30E /* bird_cut.png in Resources */,
 				010E4E40221004550097F30E /* hituzi_cut.png in Resources */,
 				015BD7C42144E31400900AEC /* ListTableViewCell.xib in Resources */,
+				01A6DECE229A266400B71630 /* bird2⁻2.png in Resources */,
 				010E4E3B221004550097F30E /* zou_cut.png in Resources */,
 				01AD462C21A125C90041BE47 /* plus.png in Resources */,
 				010E4E3F221004550097F30E /* panda_cut.png in Resources */,
 				010E4E42221004550097F30E /* dog_cut.png in Resources */,
 				015BD7D62144EE5D00900AEC /* 家の無料アイコン.png in Resources */,
 				010E4E41221004550097F30E /* flog_cut.png in Resources */,
+				01A6DED0229A266400B71630 /* tanuki.png in Resources */,
 				01AD462E21A125D70041BE47 /* waru.png in Resources */,
 				01DB32F621044FA100EC13D2 /* Assets.xcassets in Resources */,
 				015BD7DA2144F03B00900AEC /* 宝くじのアイコン.png in Resources */,

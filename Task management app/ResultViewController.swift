@@ -37,7 +37,7 @@ class ResultViewController: UIViewController {
     let nowFlag3 = UserDefaults.standard
     let nowFlag4 = UserDefaults.standard
     let characterNameDataArrayBeforeGet: [String] = ["bird", "cat", "dog", "flog", "hituzi", "kappa", "kingpengwin", "panda", "pig", "zou"]
-    let characterImageDataArrayBeforeGet: [String] = ["bird_cut.png", "cat_cut.png", "dog_cut.png", "flog_cut.jpg", "hituzi_cut.png", "hituzi_cut.png", "kappa_cut.png", "kingpengwin_cut.png", "panda_cut.png", "pig_cut.png", "zou_cut.png"]
+    let characterImageDataArrayBeforeGet: [String] = ["bird_cut.png", "cat_cut.png", "dog_cut.png", "flog_cut.png", "hituzi_cut.png", "hituzi_cut.png", "kappa_cut.png", "kingpengwin_cut.png", "panda_cut.png", "pig_cut.png", "zou_cut.png"]
     
 
     override func viewDidLoad() {

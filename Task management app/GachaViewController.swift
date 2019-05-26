@@ -23,8 +23,8 @@ class GachaViewController: UIViewController {
     let nowFlag2 = UserDefaults.standard
     let nowFlag3 = UserDefaults.standard
     let nowFlag4 = UserDefaults.standard
-    let characterNameDataArrayBeforeGet: [String] = ["plus", "minus", "division", "kakeru", "equal"]
-    let characterImageDataArrayBeforeGet: [String] = ["plus.png", "minus.png", "waru.png", "kakeru.png", "equal.png" , "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19","20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39"]
+    let characterNameDataArrayBeforeGet: [String] = ["とりダルマ", "ねこダルマ", "いぬダルマ", "カエルダルマ", "ひつじダルマ", "カッパダルマ", "ペンギンダルマ", "パンダダルマ", "ブタダルマ", "ゾウダルマ", "ひよこダルマ", "うさぎダルマ", "たぬきダルマ", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39"]
+    let characterImageDataArrayBeforeGet: [String] = ["bird_cut.png", "cat_cut.png", "dog_cut.png", "flog_cut.png", "hituzi_cut.png", "kappa_cut.png", "kingpengwin_cut.png", "panda_cut.png", "pig_cut.png", "zou_cut.png", "bird2-2.png", "rabit.png", "tanuki.png", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39"]
     var characterFlag: [Bool] = [false, false, false, false, false]
     var characterFlag1: [Bool] = [false, false, false, false, false]
     var characterFlag2: [Bool] = [false,false, false, false, false]
