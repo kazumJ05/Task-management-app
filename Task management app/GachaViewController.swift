@@ -23,8 +23,8 @@ class GachaViewController: UIViewController {
     let nowFlag2 = UserDefaults.standard
     let nowFlag3 = UserDefaults.standard
     let nowFlag4 = UserDefaults.standard
-    let characterNameDataArrayBeforeGet: [String] = ["とりダルマ", "ねこダルマ", "いぬダルマ", "カエルダルマ", "ひつじダルマ", "カッパダルマ", "ペンギンダルマ", "パンダダルマ", "ブタダルマ", "ゾウダルマ", "ひよこダルマ", "うさぎダルマ", "たぬきダルマ", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39"]
-    let characterImageDataArrayBeforeGet: [String] = ["bird_cut.png", "cat_cut.png", "dog_cut.png", "flog_cut.png", "hituzi_cut.png", "kappa_cut.png", "kingpengwin_cut.png", "panda_cut.png", "pig_cut.png", "zou_cut.png", "bird2-2.png", "rabit.png", "tanuki.png", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39"]
+    let characterNameDataArrayBeforeGet: [String] = ["とりダルマ", "ねこダルマ", "いぬダルマ", "カエルダルマ", "ひつじダルマ", "カッパダルマ", "ねこダルマ(レア)", "パンダダルマ", "ブタダルマ", "ゾウダルマ", "ひよこダルマ", "うさぎダルマ", "たぬきダルマ", "いぬダルマ(レア)", "カエルダルマ(レア)", "ひつじダルマ(レア)", "カッパダルマ(レア)", "パンダダルマ(レア)", "うさぎダルマ(レア)", "たぬきダルマ(レア)", "ゾウダルマ(レア)", "ブタダルマ(レア)", "ペンギンダルマ"]
+    let characterImageDataArrayBeforeGet: [String] = ["bird_cut.png", "cat_cut.png", "dog_cut.png", "flog_cut.png", "hituzi_cut.png", "kappa_cut.png", "cat2.png", "panda_cut.png", "pig_cut.png", "zou_cut.png", "bird2-2.png", "rabit.png", "tanuki1-2.png", "dog2.png", "flog2.png", "hituzi2.png", "kappa2.png", "panda2.png", "rabit2.png", "tanuki2.png", "zou2.png", "pig2.png", "kingpengwin_cut.png"]
     var characterFlag: [Bool] = [false, false, false, false, false]
     var characterFlag1: [Bool] = [false, false, false, false, false]
     var characterFlag2: [Bool] = [false,false, false, false, false]
@@ -40,6 +40,7 @@ class GachaViewController: UIViewController {
     
     @IBOutlet var nowPtLabel: UILabel!
     @IBOutlet var rollBut: UIButton!
+    @IBOutlet var instructionBut: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +48,11 @@ class GachaViewController: UIViewController {
         nowPtLabel.textAlignment = NSTextAlignment.right
         // Do any additional setup after loading the view.
     }
+    
+//    @IBAction func selectInstruction(){
+//        print("A")
+//        print("B")
+//    }
     
     @IBAction func selectmawasu(){
         if studyPt < 10{
@@ -65,30 +71,30 @@ class GachaViewController: UIViewController {
                     performSegue(withIdentifier: "toResultView", sender: nil)
                     nowFlag.set(characterFlag, forKey: "nowFlag")
                     break
-//                }else if characterFlag1[getCharacterDataArrayNumber] == false{
-//                    characterFlag1[getCharacterDataArrayNumber] = true
-//                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 10
-//                    performSegue(withIdentifier: "toResultView", sender: nil)
-//                    nowFlag1.set(characterFlag1, forKey: "nowFlag1")
-//                    break
-//                }else if characterFlag2[getCharacterDataArrayNumber] == false{
-//                    characterFlag2[getCharacterDataArrayNumber] = true
-//                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 20
-//                    performSegue(withIdentifier: "toResultView", sender: nil)
-//                    nowFlag2.set(characterFlag2, forKey: "nowFlag2")
-//                    break
-//                }else if characterFlag3[getCharacterDataArrayNumber] == false{
-//                    characterFlag3[getCharacterDataArrayNumber] = true
-//                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 30
-//                    performSegue(withIdentifier: "toResultView", sender: nil)
-//                    nowFlag3.set(characterFlag3, forKey: "nowFlag3")
-//                    break
-//                }else if characterFlag4[getCharacterDataArrayNumber] == false{
-//                    characterFlag4[getCharacterDataArrayNumber] = true
-//                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 40
-//                    performSegue(withIdentifier: "toResultView", sender: nil)
-//                    nowFlag4.set(characterFlag4, forKey: "nowFlag4")
-//                    break
+                }else if characterFlag1[getCharacterDataArrayNumber] == false{
+                    characterFlag1[getCharacterDataArrayNumber] = true
+                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 10
+                    performSegue(withIdentifier: "toResultView", sender: nil)
+                    nowFlag1.set(characterFlag1, forKey: "nowFlag1")
+                    break
+                }else if characterFlag2[getCharacterDataArrayNumber] == false{
+                    characterFlag2[getCharacterDataArrayNumber] = true
+                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 20
+                    performSegue(withIdentifier: "toResultView", sender: nil)
+                    nowFlag2.set(characterFlag2, forKey: "nowFlag2")
+                    break
+                }else if characterFlag3[getCharacterDataArrayNumber] == false{
+                    characterFlag3[getCharacterDataArrayNumber] = true
+                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 30
+                    performSegue(withIdentifier: "toResultView", sender: nil)
+                    nowFlag3.set(characterFlag3, forKey: "nowFlag3")
+                    break
+                }else if characterFlag4[getCharacterDataArrayNumber] == false{
+                    characterFlag4[getCharacterDataArrayNumber] = true
+                    getCharacterDataArrayNumber = getCharacterDataArrayNumber + 40
+                    performSegue(withIdentifier: "toResultView", sender: nil)
+                    nowFlag4.set(characterFlag4, forKey: "nowFlag4")
+                    break
                 }else{
                 }
             }

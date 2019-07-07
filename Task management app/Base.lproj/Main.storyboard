@@ -229,6 +229,133 @@
             </objects>
             <point key="canvasLocation" x="3662" y="-627"/>
         </scene>
+        <!--Instruction View Controller-->
+        <scene sceneID="vgb-FC-1yq">
+            <objects>
+                <viewController id="hEi-lr-H8m" customClass="InstructionViewController" customModule="Task_management_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B4Q-mE-U8C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S8Z-WR-6Yr">
+                                <rect key="frame" x="80" y="65" width="215" height="83"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="このガチャでは、" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbB-0D-TMY">
+                                        <rect key="frame" x="24" y="24" width="158" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="以下のキャラクターと、" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNF-9p-LC9">
+                                        <rect key="frame" x="24" y="41" width="191" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="色違いが排出されます。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tp0-y0-CTD">
+                                        <rect key="frame" x="24" y="62" width="191" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Noa-qi-e3X">
+                                <rect key="frame" x="0.0" y="156" width="375" height="511"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bird_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Iq-Yh-YOJ">
+                                        <rect key="frame" x="121" y="241" width="116" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zou_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="CfL-ic-5df">
+                                        <rect key="frame" x="56" y="364" width="112" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="cWX-0g-8IM">
+                                        <rect key="frame" x="245" y="118" width="122" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pig_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="uXj-f3-Qzp">
+                                        <rect key="frame" x="121" y="118" width="116" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rabit.png" translatesAutoresizingMaskIntoConstraints="NO" id="X2g-wq-cEb">
+                                        <rect key="frame" x="245" y="241" width="122" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="panda_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="AxS-lm-Hpw">
+                                        <rect key="frame" x="0.0" y="241" width="120" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kingpengwin_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="AZv-lo-28q">
+                                        <rect key="frame" x="0.0" y="118" width="120" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kappa_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="8u2-uu-UiL">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hituzi_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="uVE-9q-X85">
+                                        <rect key="frame" x="245" y="0.0" width="122" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flog_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="9x0-fM-anI">
+                                        <rect key="frame" x="121" y="0.0" width="116" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="T20-iZ-xlM">
+                                        <rect key="frame" x="209" y="364" width="114" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="EtQ-zn-hP0"/>
+                                    <constraint firstAttribute="height" constant="511" id="gK7-Y6-zuo"/>
+                                </constraints>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdh-yh-Qhy">
+                                <rect key="frame" x="0.0" y="21" width="430" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1Ce-a2-dXc"/>
+                                    <constraint firstAttribute="width" constant="375" id="6kN-P3-w7b"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="キャラクターについて" id="6rF-bn-HPn">
+                                        <barButtonItem key="leftBarButtonItem" title="戻る" id="dEh-D4-JdW">
+                                            <connections>
+                                                <action selector="selectback" destination="hEi-lr-H8m" id="WVc-VS-P33"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S8Z-WR-6Yr" firstAttribute="top" secondItem="jdh-yh-Qhy" secondAttribute="bottom" id="AHR-jT-Q4q"/>
+                            <constraint firstItem="S8Z-WR-6Yr" firstAttribute="top" secondItem="jdh-yh-Qhy" secondAttribute="bottom" id="HX6-Bk-pON"/>
+                            <constraint firstItem="S8Z-WR-6Yr" firstAttribute="leading" secondItem="eYF-uW-3rX" secondAttribute="leading" constant="80" id="OpD-Oi-MV4"/>
+                            <constraint firstItem="Noa-qi-e3X" firstAttribute="top" secondItem="S8Z-WR-6Yr" secondAttribute="bottom" constant="8" id="Vsz-a4-EXO"/>
+                            <constraint firstItem="jdh-yh-Qhy" firstAttribute="leading" secondItem="eYF-uW-3rX" secondAttribute="leading" id="Zhd-F5-Zl6"/>
+                            <constraint firstItem="eYF-uW-3rX" firstAttribute="trailing" secondItem="S8Z-WR-6Yr" secondAttribute="trailing" constant="80" id="cft-ak-Zmg"/>
+                            <constraint firstItem="jdh-yh-Qhy" firstAttribute="trailing" secondItem="eYF-uW-3rX" secondAttribute="trailing" id="dqM-Ar-xYE"/>
+                            <constraint firstItem="Noa-qi-e3X" firstAttribute="bottom" secondItem="eYF-uW-3rX" secondAttribute="bottom" id="r7T-Yx-CBW"/>
+                            <constraint firstItem="Noa-qi-e3X" firstAttribute="leading" secondItem="eYF-uW-3rX" secondAttribute="leading" id="tOF-VU-KxE"/>
+                            <constraint firstItem="jdh-yh-Qhy" firstAttribute="top" secondItem="eYF-uW-3rX" secondAttribute="top" constant="1" id="xfY-HH-4zL"/>
+                            <constraint firstItem="Noa-qi-e3X" firstAttribute="trailing" secondItem="eYF-uW-3rX" secondAttribute="trailing" id="xtq-Mp-xQn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eYF-uW-3rX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5aR-Qw-Oee" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2733.5999999999999" y="-1381.2593703148427"/>
+        </scene>
         <!--gacha-->
         <scene sceneID="Ks9-uN-8W1">
             <objects>
@@ -297,13 +424,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iK2-vM-PDF">
+                                <rect key="frame" x="111" y="451" width="153" height="59"/>
+                                <color key="backgroundColor" red="0.79318906259999999" green="1" blue="0.52904352639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="DhE-4K-UBF"/>
+                                    <constraint firstAttribute="height" constant="59" id="dVh-DE-bv5"/>
+                                </constraints>
+                                <state key="normal" title="キャラクターについて"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="hEi-lr-H8m" kind="presentation" id="NX9-3w-UTI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="CzH-jO-a8l" firstAttribute="centerY" secondItem="2qm-v7-70B" secondAttribute="centerY" constant="-129" id="0AE-OW-KeO"/>
+                            <constraint firstItem="iK2-vM-PDF" firstAttribute="centerY" secondItem="2qm-v7-70B" secondAttribute="centerY" constant="147" id="1RC-Oe-6IQ"/>
                             <constraint firstItem="itt-XT-WjO" firstAttribute="centerY" secondItem="2qm-v7-70B" secondAttribute="centerY" constant="-130" id="1XW-YH-y8X"/>
                             <constraint firstItem="knE-jE-fV0" firstAttribute="centerX" secondItem="2qm-v7-70B" secondAttribute="centerX" constant="16.5" id="3gh-Lj-QgI"/>
                             <constraint firstItem="itt-XT-WjO" firstAttribute="centerX" secondItem="2qm-v7-70B" secondAttribute="centerX" constant="-33" id="8Ql-Wa-aoJ"/>
+                            <constraint firstItem="iK2-vM-PDF" firstAttribute="centerX" secondItem="2qm-v7-70B" secondAttribute="centerX" id="JMy-7C-n0o"/>
                             <constraint firstItem="omj-bu-8m7" firstAttribute="centerX" secondItem="2qm-v7-70B" secondAttribute="centerX" constant="-6.5" id="MxJ-38-3Jh"/>
                             <constraint firstItem="knE-jE-fV0" firstAttribute="centerY" secondItem="2qm-v7-70B" secondAttribute="centerY" constant="-129" id="U2Q-sp-Q34"/>
                             <constraint firstItem="LOU-hp-8iN" firstAttribute="centerY" secondItem="2qm-v7-70B" secondAttribute="centerY" constant="43" id="VGp-qa-QaA"/>
@@ -315,6 +464,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="gacha" image="宝くじのアイコン.png" selectedImage="宝くじのアイコン.png" id="Fpi-GW-eY4"/>
                     <connections>
+                        <outlet property="instructionBut" destination="iK2-vM-PDF" id="Q5b-mQ-LxT"/>
                         <outlet property="nowPtLabel" destination="itt-XT-WjO" id="VFU-gv-yeg"/>
                         <outlet property="rollBut" destination="LOU-hp-8iN" id="izZ-15-gvO"/>
                         <segue destination="3cm-bz-VUD" kind="presentation" identifier="toResultView" id="SGL-tN-9Gf"/>
@@ -322,7 +472,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HRG-k0-X3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2714" y="-627"/>
+            <point key="canvasLocation" x="2712.8000000000002" y="-627.4362818590705"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="PpC-Cc-BIC">
@@ -550,7 +700,7 @@
                                     <constraint firstAttribute="height" constant="59" id="A9h-8o-Dar"/>
                                     <constraint firstAttribute="width" constant="101" id="pqW-2R-wp8"/>
                                 </constraints>
-                                <state key="normal" title="start/stop"/>
+                                <state key="normal" title="開始/停止"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -691,7 +841,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="未登録" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUj-AH-XLq">
-                                                <rect key="frame" x="17" y="13" width="52" height="21"/>
+                                                <rect key="frame" x="17" y="11" width="52" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -802,6 +952,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bird_cut.png" width="2133" height="2133"/>
+        <image name="cat_cut.png" width="1024" height="1024"/>
+        <image name="dog_cut.png" width="1024" height="1024"/>
+        <image name="flog_cut.png" width="1024" height="1024"/>
+        <image name="hituzi_cut.png" width="1024" height="1024"/>
+        <image name="kappa_cut.png" width="1024" height="1024"/>
+        <image name="kingpengwin_cut.png" width="1024" height="1024"/>
+        <image name="panda_cut.png" width="1024" height="1024"/>
+        <image name="pig_cut.png" width="1024" height="1024"/>
+        <image name="rabit.png" width="1024" height="1024"/>
+        <image name="zou_cut.png" width="1024" height="1024"/>
         <image name="ギアアイコン (2).png" width="32" height="32"/>
         <image name="プラスのアイコン素材.png" width="32" height="32"/>
         <image name="宝くじのアイコン.png" width="32" height="32"/>
