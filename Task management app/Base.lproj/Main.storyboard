@@ -237,33 +237,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S8Z-WR-6Yr">
-                                <rect key="frame" x="80" y="65" width="215" height="83"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="このガチャでは、" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbB-0D-TMY">
-                                        <rect key="frame" x="24" y="24" width="158" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="以下のキャラクターと、" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNF-9p-LC9">
-                                        <rect key="frame" x="24" y="41" width="191" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="色違いが排出されます。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tp0-y0-CTD">
-                                        <rect key="frame" x="24" y="62" width="191" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Noa-qi-e3X">
                                 <rect key="frame" x="0.0" y="156" width="375" height="511"/>
                                 <subviews>
@@ -273,10 +246,6 @@
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zou_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="CfL-ic-5df">
                                         <rect key="frame" x="56" y="364" width="112" height="115"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="cWX-0g-8IM">
-                                        <rect key="frame" x="245" y="118" width="122" height="115"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pig_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="uXj-f3-Qzp">
@@ -291,35 +260,70 @@
                                         <rect key="frame" x="0.0" y="241" width="120" height="115"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kingpengwin_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="AZv-lo-28q">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tanuki1-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="AZv-lo-28q">
                                         <rect key="frame" x="0.0" y="118" width="120" height="115"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kappa_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="8u2-uu-UiL">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="115"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hituzi_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="uVE-9q-X85">
-                                        <rect key="frame" x="245" y="0.0" width="122" height="115"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flog_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="9x0-fM-anI">
-                                        <rect key="frame" x="121" y="0.0" width="116" height="115"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="T20-iZ-xlM">
                                         <rect key="frame" x="209" y="364" width="114" height="115"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="cWX-0g-8IM">
+                                        <rect key="frame" x="245" y="118" width="122" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cGS-rZ-9pH">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="flog_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="9x0-fM-anI">
+                                                <rect key="frame" x="129" y="8" width="116" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="9x0-fM-anI" secondAttribute="height" multiplier="116:115" id="ss3-NM-1wO"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kappa_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="8u2-uu-UiL">
+                                                <rect key="frame" x="0.0" y="0.0" width="1068.5" height="1024"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="8u2-uu-UiL" secondAttribute="height" multiplier="24:23" id="ExY-Q2-QjS"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="hituzi_cut.png" translatesAutoresizingMaskIntoConstraints="NO" id="uVE-9q-X85">
+                                                <rect key="frame" x="253" y="8" width="122" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="uVE-9q-X85" secondAttribute="height" multiplier="61:60" id="MYP-Pb-OaN"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.70748275940000005" green="0.99153116230000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="8u2-uu-UiL" firstAttribute="top" secondItem="cGS-rZ-9pH" secondAttribute="top" id="cld-ew-xsP"/>
+                                            <constraint firstItem="8u2-uu-UiL" firstAttribute="leading" secondItem="cGS-rZ-9pH" secondAttribute="leading" id="gp4-UE-sYZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="8u2-uu-UiL" secondAttribute="bottom" id="hSF-9Z-gct"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Kd-pt-wdY">
+                                        <rect key="frame" x="0.0" y="128" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yAf-6g-R8r">
+                                        <rect key="frame" x="0.0" y="255" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9jS-Ou-bYl">
+                                        <rect key="frame" x="-3" y="383" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="EtQ-zn-hP0"/>
-                                    <constraint firstAttribute="height" constant="511" id="gK7-Y6-zuo"/>
+                                    <constraint firstAttribute="width" secondItem="Noa-qi-e3X" secondAttribute="height" multiplier="375:511" id="6aZ-mQ-7QR"/>
                                 </constraints>
                             </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdh-yh-Qhy">
-                                <rect key="frame" x="0.0" y="21" width="430" height="44"/>
+                                <rect key="frame" x="0.0" y="21" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="1Ce-a2-dXc"/>
                                     <constraint firstAttribute="width" constant="375" id="6kN-P3-w7b"/>
@@ -334,16 +338,51 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S8Z-WR-6Yr">
+                                <rect key="frame" x="0.0" y="65" width="375" height="101"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="このガチャでは、" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbB-0D-TMY">
+                                        <rect key="frame" x="118" y="8" width="139" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="色違い12種、シークレット1種" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tp0-y0-CTD">
+                                        <rect key="frame" x="71" y="52" width="233" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="以下のキャラクター12種と、" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNF-9p-LC9">
+                                        <rect key="frame" x="74.5" y="31" width="226" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="が排出されます。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ay-No-vdV">
+                                        <rect key="frame" x="118" y="72" width="139" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="3Ay-No-vdV" firstAttribute="centerX" secondItem="S8Z-WR-6Yr" secondAttribute="centerX" id="KYK-yL-EnV"/>
+                                    <constraint firstAttribute="height" constant="101" id="Pwr-2j-DoS"/>
+                                    <constraint firstItem="NbB-0D-TMY" firstAttribute="centerX" secondItem="S8Z-WR-6Yr" secondAttribute="centerX" id="Q6i-cx-uPb"/>
+                                    <constraint firstItem="MNF-9p-LC9" firstAttribute="centerX" secondItem="S8Z-WR-6Yr" secondAttribute="centerX" id="kud-wc-G4V"/>
+                                    <constraint firstItem="tp0-y0-CTD" firstAttribute="centerX" secondItem="S8Z-WR-6Yr" secondAttribute="centerX" id="onJ-9k-PmW"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="S8Z-WR-6Yr" firstAttribute="top" secondItem="jdh-yh-Qhy" secondAttribute="bottom" id="AHR-jT-Q4q"/>
-                            <constraint firstItem="S8Z-WR-6Yr" firstAttribute="top" secondItem="jdh-yh-Qhy" secondAttribute="bottom" id="HX6-Bk-pON"/>
-                            <constraint firstItem="S8Z-WR-6Yr" firstAttribute="leading" secondItem="eYF-uW-3rX" secondAttribute="leading" constant="80" id="OpD-Oi-MV4"/>
-                            <constraint firstItem="Noa-qi-e3X" firstAttribute="top" secondItem="S8Z-WR-6Yr" secondAttribute="bottom" constant="8" id="Vsz-a4-EXO"/>
+                            <constraint firstItem="S8Z-WR-6Yr" firstAttribute="top" secondItem="jdh-yh-Qhy" secondAttribute="bottom" id="115-1V-5qF"/>
                             <constraint firstItem="jdh-yh-Qhy" firstAttribute="leading" secondItem="eYF-uW-3rX" secondAttribute="leading" id="Zhd-F5-Zl6"/>
-                            <constraint firstItem="eYF-uW-3rX" firstAttribute="trailing" secondItem="S8Z-WR-6Yr" secondAttribute="trailing" constant="80" id="cft-ak-Zmg"/>
+                            <constraint firstItem="S8Z-WR-6Yr" firstAttribute="trailing" secondItem="eYF-uW-3rX" secondAttribute="trailing" id="cei-vg-WrF"/>
                             <constraint firstItem="jdh-yh-Qhy" firstAttribute="trailing" secondItem="eYF-uW-3rX" secondAttribute="trailing" id="dqM-Ar-xYE"/>
+                            <constraint firstItem="S8Z-WR-6Yr" firstAttribute="leading" secondItem="eYF-uW-3rX" secondAttribute="leading" id="lX1-fy-mG5"/>
                             <constraint firstItem="Noa-qi-e3X" firstAttribute="bottom" secondItem="eYF-uW-3rX" secondAttribute="bottom" id="r7T-Yx-CBW"/>
                             <constraint firstItem="Noa-qi-e3X" firstAttribute="leading" secondItem="eYF-uW-3rX" secondAttribute="leading" id="tOF-VU-KxE"/>
                             <constraint firstItem="jdh-yh-Qhy" firstAttribute="top" secondItem="eYF-uW-3rX" secondAttribute="top" constant="1" id="xfY-HH-4zL"/>
@@ -354,7 +393,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5aR-Qw-Oee" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2733.5999999999999" y="-1381.2593703148427"/>
+            <point key="canvasLocation" x="2730.4000000000001" y="-1383.0584707646178"/>
         </scene>
         <!--gacha-->
         <scene sceneID="Ks9-uN-8W1">
@@ -958,10 +997,10 @@
         <image name="flog_cut.png" width="1024" height="1024"/>
         <image name="hituzi_cut.png" width="1024" height="1024"/>
         <image name="kappa_cut.png" width="1024" height="1024"/>
-        <image name="kingpengwin_cut.png" width="1024" height="1024"/>
         <image name="panda_cut.png" width="1024" height="1024"/>
         <image name="pig_cut.png" width="1024" height="1024"/>
         <image name="rabit.png" width="1024" height="1024"/>
+        <image name="tanuki1-2.png" width="796" height="794"/>
         <image name="zou_cut.png" width="1024" height="1024"/>
         <image name="ギアアイコン (2).png" width="32" height="32"/>
         <image name="プラスのアイコン素材.png" width="32" height="32"/>
