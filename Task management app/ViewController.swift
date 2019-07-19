@@ -75,7 +75,6 @@ class ViewController: UIViewController, UITableViewDataSource{
                 characterImageView.image = UIImage(named: characterImageArray[selectedCell!]["characterImage"]!)
                 namelabel.text = String(characterDataArray[selectedCell!]["characterName"]!)
                 lvlabel.text = String(characterDataArray[selectedCell!]["Lv"]!)
-                skilLvLabel.text = String(characterDataArray[selectedCell!]["skilLv"]!)
             }
         }
        

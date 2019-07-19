@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010C82A422E1EBE000D4047C /* kingpengwinDark.png in Resources */ = {isa = PBXBuildFile; fileRef = 010C82A322E1EBE000D4047C /* kingpengwinDark.png */; };
+		010C82AB22E1ED7D00D4047C /* kappa_cut.png in Resources */ = {isa = PBXBuildFile; fileRef = 010C82A522E1ED7C00D4047C /* kappa_cut.png */; };
+		010C82AC22E1ED7D00D4047C /* rabit.png in Resources */ = {isa = PBXBuildFile; fileRef = 010C82A622E1ED7C00D4047C /* rabit.png */; };
+		010C82AD22E1ED7D00D4047C /* panda_cut.png in Resources */ = {isa = PBXBuildFile; fileRef = 010C82A722E1ED7C00D4047C /* panda_cut.png */; };
+		010C82AE22E1ED7D00D4047C /* zou_cut.png in Resources */ = {isa = PBXBuildFile; fileRef = 010C82A822E1ED7C00D4047C /* zou_cut.png */; };
+		010C82AF22E1ED7D00D4047C /* hituzi_cut.png in Resources */ = {isa = PBXBuildFile; fileRef = 010C82A922E1ED7C00D4047C /* hituzi_cut.png */; };
+		010C82B022E1ED7D00D4047C /* pig_cut.png in Resources */ = {isa = PBXBuildFile; fileRef = 010C82AA22E1ED7C00D4047C /* pig_cut.png */; };
+		010C82B222E1EE2B00D4047C /* InstructionChallaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C82B122E1EE2B00D4047C /* InstructionChallaViewController.swift */; };
 		010E4E3A221004550097F30E /* kingpengwin_cut.png in Resources */ = {isa = PBXBuildFile; fileRef = 010E4E30221004540097F30E /* kingpengwin_cut.png */; };
-		010E4E3B221004550097F30E /* zou_cut.png in Resources */ = {isa = PBXBuildFile; fileRef = 010E4E31221004540097F30E /* zou_cut.png */; };
 		010E4E3C221004550097F30E /* bird_cut.png in Resources */ = {isa = PBXBuildFile; fileRef = 010E4E32221004540097F30E /* bird_cut.png */; };
-		010E4E3D221004550097F30E /* pig_cut.png in Resources */ = {isa = PBXBuildFile; fileRef = 010E4E33221004540097F30E /* pig_cut.png */; };
 		010E4E3E221004550097F30E /* cat_cut.png in Resources */ = {isa = PBXBuildFile; fileRef = 010E4E34221004540097F30E /* cat_cut.png */; };
-		010E4E3F221004550097F30E /* panda_cut.png in Resources */ = {isa = PBXBuildFile; fileRef = 010E4E35221004540097F30E /* panda_cut.png */; };
-		010E4E40221004550097F30E /* hituzi_cut.png in Resources */ = {isa = PBXBuildFile; fileRef = 010E4E36221004540097F30E /* hituzi_cut.png */; };
 		010E4E41221004550097F30E /* flog_cut.png in Resources */ = {isa = PBXBuildFile; fileRef = 010E4E37221004540097F30E /* flog_cut.png */; };
 		010E4E42221004550097F30E /* dog_cut.png in Resources */ = {isa = PBXBuildFile; fileRef = 010E4E38221004550097F30E /* dog_cut.png */; };
-		010E4E43221004550097F30E /* kappa_cut.png in Resources */ = {isa = PBXBuildFile; fileRef = 010E4E39221004550097F30E /* kappa_cut.png */; };
 		013663DB218ECE68007ADC07 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013663DA218ECE68007ADC07 /* ResultViewController.swift */; };
 		015BD7C32144E31400900AEC /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015BD7C12144E31400900AEC /* ListTableViewCell.swift */; };
 		015BD7C42144E31400900AEC /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015BD7C22144E31400900AEC /* ListTableViewCell.xib */; };
@@ -28,7 +31,6 @@
 		015BD7D62144EE5D00900AEC /* 家の無料アイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 015BD7D52144EE5D00900AEC /* 家の無料アイコン.png */; };
 		015BD7D82144F03100900AEC /* プラスのアイコン素材.png in Resources */ = {isa = PBXBuildFile; fileRef = 015BD7D72144F03100900AEC /* プラスのアイコン素材.png */; };
 		015BD7DA2144F03B00900AEC /* 宝くじのアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 015BD7D92144F03A00900AEC /* 宝くじのアイコン.png */; };
-		01A6DECF229A266400B71630 /* rabit.png in Resources */ = {isa = PBXBuildFile; fileRef = 01A6DECC229A266300B71630 /* rabit.png */; };
 		01A6DED0229A266400B71630 /* tanuki.png in Resources */ = {isa = PBXBuildFile; fileRef = 01A6DECD229A266400B71630 /* tanuki.png */; };
 		01A6DED3229A55E700B71630 /* daruma1.png in Resources */ = {isa = PBXBuildFile; fileRef = 01A6DED2229A55E700B71630 /* daruma1.png */; };
 		01A6DED5229A61A600B71630 /* darumawi.png in Resources */ = {isa = PBXBuildFile; fileRef = 01A6DED4229A61A600B71630 /* darumawi.png */; };
@@ -39,7 +41,6 @@
 		01AD462A21A125B70041BE47 /* kakeru.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01AD462921A125B70041BE47 /* kakeru.jpg */; };
 		01AD462C21A125C90041BE47 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 01AD462B21A125C90041BE47 /* plus.png */; };
 		01AD462E21A125D70041BE47 /* waru.png in Resources */ = {isa = PBXBuildFile; fileRef = 01AD462D21A125D70041BE47 /* waru.png */; };
-		01B0FD8522D1916500AEAC92 /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0FD8422D1916500AEAC92 /* InstructionViewController.swift */; };
 		01B0FD8722D196A800AEAC92 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B0FD8622D196A800AEAC92 /* icon.png */; };
 		01B0FD8B22D1974900AEAC92 /* cat2.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B0FD8A22D1974900AEAC92 /* cat2.png */; };
 		01B0FD9422D1975200AEAC92 /* tanuki2.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B0FD8D22D1975200AEAC92 /* tanuki2.png */; };
@@ -82,16 +83,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010C82A322E1EBE000D4047C /* kingpengwinDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kingpengwinDark.png; sourceTree = "<group>"; };
+		010C82A522E1ED7C00D4047C /* kappa_cut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kappa_cut.png; path = "../../../作品準備品/TMAchara/キャラクター画像/カラー/完成/取り込み済み/kappa_cut.png"; sourceTree = "<group>"; };
+		010C82A622E1ED7C00D4047C /* rabit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rabit.png; path = "../../../作品準備品/TMAchara/キャラクター画像/カラー/完成/取り込み済み/rabit.png"; sourceTree = "<group>"; };
+		010C82A722E1ED7C00D4047C /* panda_cut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = panda_cut.png; path = "../../../作品準備品/TMAchara/キャラクター画像/カラー/完成/取り込み済み/panda_cut.png"; sourceTree = "<group>"; };
+		010C82A822E1ED7C00D4047C /* zou_cut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zou_cut.png; path = "../../../作品準備品/TMAchara/キャラクター画像/カラー/完成/取り込み済み/zou_cut.png"; sourceTree = "<group>"; };
+		010C82A922E1ED7C00D4047C /* hituzi_cut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hituzi_cut.png; path = "../../../作品準備品/TMAchara/キャラクター画像/カラー/完成/取り込み済み/hituzi_cut.png"; sourceTree = "<group>"; };
+		010C82AA22E1ED7C00D4047C /* pig_cut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pig_cut.png; path = "../../../作品準備品/TMAchara/キャラクター画像/カラー/完成/取り込み済み/pig_cut.png"; sourceTree = "<group>"; };
+		010C82B122E1EE2B00D4047C /* InstructionChallaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionChallaViewController.swift; sourceTree = "<group>"; };
 		010E4E30221004540097F30E /* kingpengwin_cut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kingpengwin_cut.png; sourceTree = "<group>"; };
-		010E4E31221004540097F30E /* zou_cut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zou_cut.png; sourceTree = "<group>"; };
 		010E4E32221004540097F30E /* bird_cut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird_cut.png; sourceTree = "<group>"; };
-		010E4E33221004540097F30E /* pig_cut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig_cut.png; sourceTree = "<group>"; };
 		010E4E34221004540097F30E /* cat_cut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat_cut.png; sourceTree = "<group>"; };
-		010E4E35221004540097F30E /* panda_cut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panda_cut.png; sourceTree = "<group>"; };
-		010E4E36221004540097F30E /* hituzi_cut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hituzi_cut.png; sourceTree = "<group>"; };
 		010E4E37221004540097F30E /* flog_cut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flog_cut.png; sourceTree = "<group>"; };
 		010E4E38221004550097F30E /* dog_cut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog_cut.png; sourceTree = "<group>"; };
-		010E4E39221004550097F30E /* kappa_cut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kappa_cut.png; sourceTree = "<group>"; };
 		013663DA218ECE68007ADC07 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		015BD7C12144E31400900AEC /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		015BD7C22144E31400900AEC /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
@@ -103,7 +107,6 @@
 		015BD7D52144EE5D00900AEC /* 家の無料アイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "家の無料アイコン.png"; sourceTree = "<group>"; };
 		015BD7D72144F03100900AEC /* プラスのアイコン素材.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "プラスのアイコン素材.png"; sourceTree = "<group>"; };
 		015BD7D92144F03A00900AEC /* 宝くじのアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宝くじのアイコン.png"; sourceTree = "<group>"; };
-		01A6DECC229A266300B71630 /* rabit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rabit.png; sourceTree = "<group>"; };
 		01A6DECD229A266400B71630 /* tanuki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tanuki.png; sourceTree = "<group>"; };
 		01A6DED2229A55E700B71630 /* daruma1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daruma1.png; sourceTree = "<group>"; };
 		01A6DED4229A61A600B71630 /* darumawi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darumawi.png; sourceTree = "<group>"; };
@@ -114,7 +117,6 @@
 		01AD462921A125B70041BE47 /* kakeru.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kakeru.jpg; sourceTree = "<group>"; };
 		01AD462B21A125C90041BE47 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		01AD462D21A125D70041BE47 /* waru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waru.png; sourceTree = "<group>"; };
-		01B0FD8422D1916500AEAC92 /* InstructionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
 		01B0FD8622D196A800AEAC92 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		01B0FD8A22D1974900AEAC92 /* cat2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat2.png; sourceTree = "<group>"; };
 		01B0FD8D22D1975200AEAC92 /* tanuki2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tanuki2.png; sourceTree = "<group>"; };
@@ -173,8 +175,15 @@
 		01A6DED1229A31A800B71630 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				010C82A922E1ED7C00D4047C /* hituzi_cut.png */,
+				010C82A522E1ED7C00D4047C /* kappa_cut.png */,
+				010C82A722E1ED7C00D4047C /* panda_cut.png */,
+				010C82AA22E1ED7C00D4047C /* pig_cut.png */,
+				010C82A622E1ED7C00D4047C /* rabit.png */,
+				010C82A822E1ED7C00D4047C /* zou_cut.png */,
 				01A6DED2229A55E700B71630 /* daruma1.png */,
 				01A6DED4229A61A600B71630 /* darumawi.png */,
+				010C82A322E1EBE000D4047C /* kingpengwinDark.png */,
 				01B0FDA222D19A3800AEAC92 /* pig2.png */,
 				010E4E32221004540097F30E /* bird_cut.png */,
 				01B0FDA022D1990D00AEAC92 /* tanuki1-2.png */,
@@ -190,17 +199,11 @@
 				01B0FD8D22D1975200AEAC92 /* tanuki2.png */,
 				01B0FD9022D1975200AEAC92 /* zou2.png */,
 				01A6DED6229A684300B71630 /* daruma2.png */,
-				01A6DECC229A266300B71630 /* rabit.png */,
 				01B0FD8A22D1974900AEAC92 /* cat2.png */,
 				01A6DECD229A266400B71630 /* tanuki.png */,
 				01B0FD9E22D1985D00AEAC92 /* bird2-2.png */,
 				01A6DED8229A704D00B71630 /* darumahigh.png */,
-				010E4E36221004540097F30E /* hituzi_cut.png */,
-				010E4E39221004550097F30E /* kappa_cut.png */,
 				010E4E30221004540097F30E /* kingpengwin_cut.png */,
-				010E4E35221004540097F30E /* panda_cut.png */,
-				010E4E33221004540097F30E /* pig_cut.png */,
-				010E4E31221004540097F30E /* zou_cut.png */,
 				01AD462521A125AA0041BE47 /* minus.png */,
 				01AD462B21A125C90041BE47 /* plus.png */,
 				01AD462721A125B00041BE47 /* equal.png */,
@@ -254,7 +257,7 @@
 				01C211D7217C5A2C00B1431C /* CharacterListTableViewCell.swift */,
 				01C211D8217C5A2C00B1431C /* CharacterListTableViewCell.xib */,
 				013663DA218ECE68007ADC07 /* ResultViewController.swift */,
-				01B0FD8422D1916500AEAC92 /* InstructionViewController.swift */,
+				010C82B122E1EE2B00D4047C /* InstructionChallaViewController.swift */,
 			);
 			path = "Task management app";
 			sourceTree = "<group>";
@@ -381,36 +384,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01A6DECF229A266400B71630 /* rabit.png in Resources */,
-				010E4E43221004550097F30E /* kappa_cut.png in Resources */,
 				01DB32F921044FA100EC13D2 /* LaunchScreen.storyboard in Resources */,
-				010E4E3D221004550097F30E /* pig_cut.png in Resources */,
 				01B0FD8722D196A800AEAC92 /* icon.png in Resources */,
 				015BD7D42144EE0200900AEC /* ギアアイコン (2).png in Resources */,
 				01B0FD9922D1975300AEAC92 /* rabit2.png in Resources */,
 				01C211DA217C5A2C00B1431C /* CharacterListTableViewCell.xib in Resources */,
 				015BD7D82144F03100900AEC /* プラスのアイコン素材.png in Resources */,
+				010C82AC22E1ED7D00D4047C /* rabit.png in Resources */,
+				010C82AE22E1ED7D00D4047C /* zou_cut.png in Resources */,
 				01B0FD9D22D1975800AEAC92 /* dog2.png in Resources */,
+				010C82AF22E1ED7D00D4047C /* hituzi_cut.png in Resources */,
 				01A6DED5229A61A600B71630 /* darumawi.png in Resources */,
 				01AD462A21A125B70041BE47 /* kakeru.jpg in Resources */,
 				010E4E3A221004550097F30E /* kingpengwin_cut.png in Resources */,
+				010C82A422E1EBE000D4047C /* kingpengwinDark.png in Resources */,
 				01B0FD8B22D1974900AEAC92 /* cat2.png in Resources */,
 				01B0FD9522D1975300AEAC92 /* pannda2.png in Resources */,
 				01A6DED3229A55E700B71630 /* daruma1.png in Resources */,
 				010E4E3C221004550097F30E /* bird_cut.png in Resources */,
-				010E4E40221004550097F30E /* hituzi_cut.png in Resources */,
 				015BD7C42144E31400900AEC /* ListTableViewCell.xib in Resources */,
 				01A6DED9229A704D00B71630 /* darumahigh.png in Resources */,
-				010E4E3B221004550097F30E /* zou_cut.png in Resources */,
 				01AD462C21A125C90041BE47 /* plus.png in Resources */,
-				010E4E3F221004550097F30E /* panda_cut.png in Resources */,
 				01B0FD9C22D1975800AEAC92 /* flog2.png in Resources */,
 				010E4E42221004550097F30E /* dog_cut.png in Resources */,
 				015BD7D62144EE5D00900AEC /* 家の無料アイコン.png in Resources */,
+				010C82AD22E1ED7D00D4047C /* panda_cut.png in Resources */,
 				01A6DED7229A684300B71630 /* daruma2.png in Resources */,
 				01B0FD9F22D1985D00AEAC92 /* bird2-2.png in Resources */,
 				01B0FD9722D1975300AEAC92 /* zou2.png in Resources */,
 				010E4E41221004550097F30E /* flog_cut.png in Resources */,
+				010C82B022E1ED7D00D4047C /* pig_cut.png in Resources */,
 				01A6DED0229A266400B71630 /* tanuki.png in Resources */,
 				01AD462E21A125D70041BE47 /* waru.png in Resources */,
 				01B0FDA122D1990D00AEAC92 /* tanuki1-2.png in Resources */,
@@ -419,6 +422,7 @@
 				010E4E3E221004550097F30E /* cat_cut.png in Resources */,
 				01B0FD9422D1975200AEAC92 /* tanuki2.png in Resources */,
 				01AD462621A125AA0041BE47 /* minus.png in Resources */,
+				010C82AB22E1ED7D00D4047C /* kappa_cut.png in Resources */,
 				01B0FD9822D1975300AEAC92 /* kappa2.png in Resources */,
 				01B0FD9622D1975300AEAC92 /* hituzi2.png in Resources */,
 				01B0FDA322D19A3800AEAC92 /* pig2.png in Resources */,
@@ -453,10 +457,10 @@
 				015BD7CA2144E9C100900AEC /* configrationViewController.swift in Sources */,
 				015BD7CC2144E9FA00900AEC /* GachaViewController.swift in Sources */,
 				01DB32EF21044F9800EC13D2 /* AppDelegate.swift in Sources */,
-				01B0FD8522D1916500AEAC92 /* InstructionViewController.swift in Sources */,
 				015BD7C82144E97100900AEC /* addViewController.swift in Sources */,
 				01C211D9217C5A2C00B1431C /* CharacterListTableViewCell.swift in Sources */,
 				015BD7C32144E31400900AEC /* ListTableViewCell.swift in Sources */,
+				010C82B222E1EE2B00D4047C /* InstructionChallaViewController.swift in Sources */,
 				013663DB218ECE68007ADC07 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

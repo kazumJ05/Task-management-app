@@ -10,7 +10,7 @@ import UIKit
 
 class addViewController: UIViewController, UITextFieldDelegate {
     
-    var timercount: Int = 36000
+    var timercount: Int = 0
     var timerhour: Int = 0
     var timerminute: Int = 0
     var timersecond: Int = 0
@@ -101,9 +101,9 @@ class addViewController: UIViewController, UITextFieldDelegate {
         case 3:
             
             self.view.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
-            startStopBut.backgroundColor = #colorLiteral(red: 0.7931890626, green: 1, blue: 0.5290435264, alpha: 1)
+            startStopBut.backgroundColor = #colorLiteral(red: 1, green: 0.7809499445, blue: 0.2804552203, alpha: 1)
             startStopBut.setTitleColor(#colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), for: .normal)
-            addBut.backgroundColor = #colorLiteral(red: 1, green: 0.7012115478, blue: 0.9455770609, alpha: 1)
+            addBut.backgroundColor = #colorLiteral(red: 1, green: 0.7809499445, blue: 0.2804552203, alpha: 1)
             addBut.setTitleColor(#colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), for: .normal)
             
         case 4:
@@ -185,11 +185,12 @@ class addViewController: UIViewController, UITextFieldDelegate {
             
             let aleat = UIAlertController(title: "保存完了", message: "保存が完了しました", preferredStyle: .alert)
             aleat.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            print(characterDataArray)
             self.present(aleat, animated: true, completion: nil)
             oldPtCount = ptCount
             oldLvPt = lvPt
             subjecttextField.text = ""
-            timercount = 36000
+            timercount = 0
             timerhour = 0
             timersecond = 0
             timerminute = 0
