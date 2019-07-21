@@ -142,7 +142,7 @@ class ViewController: UIViewController, UITableViewDataSource{
     }
     
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
         studydataArray.remove(at: indexPath.row)
         

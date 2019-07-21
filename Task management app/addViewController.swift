@@ -10,7 +10,7 @@ import UIKit
 
 class addViewController: UIViewController, UITextFieldDelegate {
     
-    var timercount: Int = 0
+    var timercount: Int = 36000
     var timerhour: Int = 0
     var timerminute: Int = 0
     var timersecond: Int = 0
@@ -56,6 +56,10 @@ class addViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        if savedata.array(forKey: "STUDYDATA") != nil{
+            studydataArray = savedata.array(forKey: "STUDYDATA") as! [Dictionary<String, String>]
+        }
         
         
         if colorSaveData.object(forKey: "COLOR") != nil {

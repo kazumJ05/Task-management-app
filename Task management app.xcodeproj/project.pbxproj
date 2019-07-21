@@ -41,7 +41,6 @@
 		01AD462A21A125B70041BE47 /* kakeru.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01AD462921A125B70041BE47 /* kakeru.jpg */; };
 		01AD462C21A125C90041BE47 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 01AD462B21A125C90041BE47 /* plus.png */; };
 		01AD462E21A125D70041BE47 /* waru.png in Resources */ = {isa = PBXBuildFile; fileRef = 01AD462D21A125D70041BE47 /* waru.png */; };
-		01B0FD8722D196A800AEAC92 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B0FD8622D196A800AEAC92 /* icon.png */; };
 		01B0FD8B22D1974900AEAC92 /* cat2.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B0FD8A22D1974900AEAC92 /* cat2.png */; };
 		01B0FD9422D1975200AEAC92 /* tanuki2.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B0FD8D22D1975200AEAC92 /* tanuki2.png */; };
 		01B0FD9522D1975300AEAC92 /* pannda2.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B0FD8E22D1975200AEAC92 /* pannda2.png */; };
@@ -117,7 +116,6 @@
 		01AD462921A125B70041BE47 /* kakeru.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kakeru.jpg; sourceTree = "<group>"; };
 		01AD462B21A125C90041BE47 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		01AD462D21A125D70041BE47 /* waru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waru.png; sourceTree = "<group>"; };
-		01B0FD8622D196A800AEAC92 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		01B0FD8A22D1974900AEAC92 /* cat2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat2.png; sourceTree = "<group>"; };
 		01B0FD8D22D1975200AEAC92 /* tanuki2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tanuki2.png; sourceTree = "<group>"; };
 		01B0FD8E22D1975200AEAC92 /* pannda2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pannda2.png; sourceTree = "<group>"; };
@@ -240,7 +238,6 @@
 		01DB32ED21044F9800EC13D2 /* Task management app */ = {
 			isa = PBXGroup;
 			children = (
-				01B0FD8622D196A800AEAC92 /* icon.png */,
 				01A6DED1229A31A800B71630 /* image */,
 				01DB32EE21044F9800EC13D2 /* AppDelegate.swift */,
 				01DB32F021044F9800EC13D2 /* ViewController.swift */,
@@ -385,7 +382,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				01DB32F921044FA100EC13D2 /* LaunchScreen.storyboard in Resources */,
-				01B0FD8722D196A800AEAC92 /* icon.png in Resources */,
 				015BD7D42144EE0200900AEC /* ギアアイコン (2).png in Resources */,
 				01B0FD9922D1975300AEAC92 /* rabit2.png in Resources */,
 				01C211DA217C5A2C00B1431C /* CharacterListTableViewCell.xib in Resources */,
@@ -637,11 +633,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3QTY9LA6S9;
 				INFOPLIST_FILE = "Task management app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.litech-kazuma.Task-management-app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litechkazuma.Taskmanagementapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -655,11 +652,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3QTY9LA6S9;
 				INFOPLIST_FILE = "Task management app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.litech-kazuma.Task-management-app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litechkazuma.Taskmanagementapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
